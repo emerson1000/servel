@@ -1,0 +1,50 @@
+# Carpeta de progresos parciales
+progreso_parcial/
+progreso_parcial/*
+
+# Archivos CSV de progreso parcial (en cualquier ubicación)
+*progreso_parcial*.csv
+progreso_parcial_*.csv
+
+# Logs
+*.log
+scraper_elecciones.log
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de datos grandes (opcional - descomenta si no quieres subir los CSVs)
+# *.csv
+# *.xlsx
+
+# Archivos de metadatos (opcional)
+# *_METADATOS.txt
+
