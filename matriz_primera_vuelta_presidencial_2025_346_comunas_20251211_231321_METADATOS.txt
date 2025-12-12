@@ -1,0 +1,46 @@
+METADATOS - MATRIZ ELECTORAL CHILE
+==================================================
+
+Elección: Primera Vuelta Presidencial 2025
+Archivo de datos: matriz_primera_vuelta_presidencial_2025_346_comunas_20251211_231321.csv
+Fecha generación: 2025-12-11 23:13:22
+Total comunas: 346
+Total regiones: 16
+
+ESTRUCTURA DE COLUMNAS:
+------------------------------
+comuna: Nombre de la comuna (texto)
+region: Nombre de la región (texto)
+artes_votos: Número de votos (entero)
+artes_pct: Porcentaje de votos (decimal)
+enriquez_ominami_votos: Número de votos (entero)
+enriquez_ominami_pct: Porcentaje de votos (decimal)
+jara_votos: Número de votos (entero)
+jara_pct: Porcentaje de votos (decimal)
+kaiser_votos: Número de votos (entero)
+kaiser_pct: Porcentaje de votos (decimal)
+kast_votos: Número de votos (entero)
+kast_pct: Porcentaje de votos (decimal)
+matthei_votos: Número de votos (entero)
+matthei_pct: Porcentaje de votos (decimal)
+mayne_nicholls_votos: Número de votos (entero)
+mayne_nicholls_pct: Porcentaje de votos (decimal)
+parisi_votos: Número de votos (entero)
+parisi_pct: Porcentaje de votos (decimal)
+blanco_votos: Número de votos (entero)
+blanco_pct: Porcentaje de votos (decimal)
+emitidos_votos: Número de votos (entero)
+emitidos_pct: Porcentaje de votos (decimal)
+nulo_votos: Número de votos (entero)
+nulo_pct: Porcentaje de votos (decimal)
+
+DICCIONARIO DE CANDIDATOS:
+------------------------------
+FRANCO PARISI FERNANDEZ -> parisi
+JEANNETTE JARA ROMAN -> jara
+MARCO ANTONIO ENRIQUEZ-OMINAMI -> enriquez_ominami
+JOHANNES KAISER BARENTS-VON HOHENHAGEN -> kaiser
+JOSE ANTONIO KAST RIST -> kast
+EDUARDO ANTONIO ARTES BRICHETTI -> artes
+EVELYN MATTHEI FORNET -> matthei
+HAROLD MAYNE-NICHOLLS SECUL -> mayne_nicholls

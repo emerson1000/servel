@@ -1,0 +1,39 @@
+{
+  "elecciones": {
+    "primera_vuelta_2025": {
+      "nombre": "Primera Vuelta Presidencial 2025",
+      "url": "https://elecciones.servel.cl/",
+      "mapeo_candidatos": {
+        "FRANCO PARISI FERNANDEZ": "parisi",
+        "JEANNETTE JARA ROMAN": "jara",
+        "MARCO ANTONIO ENRIQUEZ-OMINAMI": "enriquez_ominami",
+        "JOHANNES KAISER BARENTS-VON HOHENHAGEN": "kaiser",
+        "JOSE ANTONIO KAST RIST": "kast",
+        "EDUARDO ANTONIO ARTES BRICHETTI": "artes",
+        "EVELYN MATTHEI FORNET": "matthei",
+        "HAROLD MAYNE-NICHOLLS SECUL": "mayne_nicholls"
+      },
+      "tipo": "presidencial",
+      "vuelta": 1,
+      "año": 2025
+    },
+    "segunda_vuelta_2025": {
+      "nombre": "Segunda Vuelta Presidencial 2025",
+      "url": "https://segundavuelta.servel.cl/",
+      "mapeo_candidatos": {
+        "JEANNETTE JARA ROMAN": "jara",
+        "JOSE ANTONIO KAST RIST": "kast"
+      },
+      "tipo": "presidencial",
+      "vuelta": 2,
+      "año": 2025
+    }
+  },
+  "configuracion_global": {
+    "tiempo_espera_carga": 15,
+    "tiempo_espera_seleccion": 5,
+    "tiempo_espera_datos": 6,
+    "prefijo_archivo": "matriz"
+  }
+}
+

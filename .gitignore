@@ -1,0 +1,23 @@
+# Carpeta de progresos parciales
+progreso_parcial/
+
+# Logs
+*.log
+scraper_elecciones.log
+
+# Archivos temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
