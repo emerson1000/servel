@@ -1,0 +1,1145 @@
+2025-12-11 22:07:14,679 - INFO - 🚀 Iniciando extracción de datos electorales...
+2025-12-11 22:07:19,923 - WARNING - The version of firefox cannot be detected. Trying with latest driver version
+2025-12-11 22:07:23,333 - ERROR - ❌ Error al inicializar el navegador: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:07:23,335 - ERROR - 💥 Error crítico en la extracción: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:07:23,338 - ERROR - Error detallado:
+Traceback (most recent call last):
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 711, in main
+    df_resultados = scraper.ejecutar_extraccion(nombre_eleccion=config_eleccion['nombre'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 593, in ejecutar_extraccion
+    self.inicializar_navegador()
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 195, in inicializar_navegador
+    self.driver = webdriver.Firefox(options=options)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 68, in __init__
+    super().__init__(command_executor=executor, options=self.options)
+  File "C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 206, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 291, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:12:52,120 - INFO - 🚀 Iniciando extracción de datos electorales...
+2025-12-11 22:12:52,224 - INFO - 🔄 Intentando inicializar Chrome...
+2025-12-11 22:12:56,247 - WARNING - ⚠️ No se pudo inicializar Chrome: Message: Unable to obtain chromedriver using Selenium Manager; Message: Unsuccessful command executed: C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json.
+The chromedriver version cannot be discovered
+; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-12-11 22:12:56,401 - INFO - 🔄 Intentando inicializar Edge...
+2025-12-11 22:12:58,367 - WARNING - ⚠️ No se pudo inicializar Edge: Message: Unable to obtain msedgedriver using Selenium Manager; Message: Unsuccessful command executed: C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --output json.
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_143_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
+; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-12-11 22:12:58,376 - INFO - 🔄 Intentando inicializar Firefox...
+2025-12-11 22:13:03,707 - WARNING - The version of firefox cannot be detected. Trying with latest driver version
+2025-12-11 22:13:07,824 - WARNING - ⚠️ No se pudo inicializar Firefox: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:13:07,835 - ERROR - ❌ No se pudo inicializar ningún navegador (Chrome, Edge o Firefox)
+2025-12-11 22:13:07,839 - ERROR - 💡 Asegúrate de tener al menos uno de estos navegadores instalado
+2025-12-11 22:13:07,843 - ERROR - 💥 Error crítico en la extracción: No se pudo inicializar ningún navegador. Último error: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:13:07,846 - ERROR - Error detallado:
+Traceback (most recent call last):
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 773, in main
+    df_resultados = scraper.ejecutar_extraccion(nombre_eleccion=config_eleccion['nombre'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 644, in ejecutar_extraccion
+    self.inicializar_navegador()
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 210, in inicializar_navegador
+    raise Exception(f"No se pudo inicializar ningún navegador. Último error: {ultimo_error}")
+Exception: No se pudo inicializar ningún navegador. Último error: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:17:53,246 - INFO - Iniciando extraccion de datos electorales...
+2025-12-11 22:17:53,247 - INFO - Intentando inicializar Chrome...
+2025-12-11 22:17:56,108 - WARNING - No se pudo inicializar Chrome: Message: Unable to obtain chromedriver using Selenium Manager; Message: Unsuccessful command executed: C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json.
+The chromedriver version cannot be discovered
+; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-12-11 22:17:56,109 - INFO - Intentando inicializar Edge...
+2025-12-11 22:17:57,094 - WARNING - No se pudo inicializar Edge: Message: Unable to obtain msedgedriver using Selenium Manager; Message: Unsuccessful command executed: C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --output json.
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_143_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
+; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-12-11 22:17:57,095 - INFO - Intentando inicializar Firefox...
+2025-12-11 22:17:59,533 - WARNING - The version of firefox cannot be detected. Trying with latest driver version
+2025-12-11 22:18:02,877 - WARNING - No se pudo inicializar Firefox: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:18:02,878 - ERROR - No se pudo inicializar ningun navegador (Chrome, Edge o Firefox)
+2025-12-11 22:18:02,878 - ERROR - Asegurate de tener al menos uno de estos navegadores instalado
+2025-12-11 22:18:02,878 - ERROR - Error critico en la extraccion: No se pudo inicializar ningun navegador. Ultimo error: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:18:02,878 - ERROR - Error detallado:
+Traceback (most recent call last):
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 780, in main
+    df_resultados = scraper.ejecutar_extraccion(nombre_eleccion=config_eleccion['nombre'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 651, in ejecutar_extraccion
+    self.inicializar_navegador()
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 217, in inicializar_navegador
+    raise Exception(f"No se pudo inicializar ningun navegador. Ultimo error: {ultimo_error}")
+Exception: No se pudo inicializar ningun navegador. Ultimo error: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:19:51,194 - INFO - Iniciando extraccion de datos electorales...
+2025-12-11 22:19:51,194 - INFO - Intentando inicializar Chrome...
+2025-12-11 22:19:51,196 - INFO - Chrome encontrado en: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-12-11 22:19:55,962 - WARNING - The version of chrome cannot be detected. Trying with latest driver version
+2025-12-11 22:20:06,025 - WARNING - Intentando sin especificar ruta de Chrome...
+2025-12-11 22:20:10,083 - WARNING - No se pudo inicializar Chrome: Message: Unable to obtain chromedriver using Selenium Manager; Message: Unsuccessful command executed: C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json.
+The chromedriver version cannot be discovered
+; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-12-11 22:20:10,084 - INFO - Intentando inicializar Edge...
+2025-12-11 22:20:10,085 - INFO - Edge encontrado en: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+2025-12-11 22:20:11,865 - WARNING - Intentando sin especificar ruta de Edge...
+2025-12-11 22:20:17,917 - WARNING - No se pudo inicializar Edge: Message: Unable to obtain msedgedriver using Selenium Manager; Message: Unsuccessful command executed: C:\Users\emers\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --output json.
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_143_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
+; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-12-11 22:20:17,918 - INFO - Intentando inicializar Firefox...
+2025-12-11 22:20:22,141 - WARNING - The version of firefox cannot be detected. Trying with latest driver version
+2025-12-11 22:20:25,246 - WARNING - No se pudo inicializar Firefox: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:20:25,247 - ERROR - No se pudo inicializar ningun navegador (Chrome, Edge o Firefox)
+2025-12-11 22:20:25,247 - ERROR - Asegurate de tener al menos uno de estos navegadores instalado
+2025-12-11 22:20:25,248 - ERROR - Error critico en la extraccion: No se pudo inicializar ningun navegador. Ultimo error: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:20:25,249 - ERROR - Error detallado:
+Traceback (most recent call last):
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 827, in main
+    df_resultados = scraper.ejecutar_extraccion(nombre_eleccion=config_eleccion['nombre'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 698, in ejecutar_extraccion
+    self.inicializar_navegador()
+  File "C:\Users\emers\OneDrive\Documentos\servel\scraper_modular.py", line 217, in inicializar_navegador
+    raise Exception(f"No se pudo inicializar ningun navegador. Ultimo error: {ultimo_error}")
+Exception: No se pudo inicializar ningun navegador. Ultimo error: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2025-12-11 22:23:58,219 - INFO - Iniciando extraccion de datos electorales...
+2025-12-11 22:23:58,220 - INFO - Intentando inicializar Chrome...
+2025-12-11 22:23:58,220 - INFO - Chrome encontrado en: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-12-11 22:23:59,208 - INFO - ====== WebDriver manager ======
+2025-12-11 22:24:04,830 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-11 22:24:06,065 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-11 22:24:07,153 - INFO - There is no [win64] chromedriver "142.0.7444.175" for browser google-chrome "142.0.7444" in cache
+2025-12-11 22:24:07,154 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-11 22:24:09,522 - INFO - WebDriver version 142.0.7444.175 selected
+2025-12-11 22:24:09,545 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/win32/chromedriver-win32.zip
+2025-12-11 22:24:09,546 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/win32/chromedriver-win32.zip
+2025-12-11 22:24:10,567 - INFO - Driver downloading response is 200
+2025-12-11 22:24:13,355 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-11 22:24:16,121 - INFO - Driver has been saved in cache [C:\Users\emers\.wdm\drivers\chromedriver\win64\142.0.7444.175]
+2025-12-11 22:24:21,034 - INFO - Chrome inicializado con webdriver-manager
+2025-12-11 22:24:21,041 - INFO - Navegador Chrome inicializado correctamente
+2025-12-11 22:24:21,041 - INFO - Navegando a: https://elecciones.servel.cl/
+2025-12-11 22:24:47,968 - INFO - Filtro 'Division Electoral Chile' activado
+2025-12-11 22:24:49,819 - INFO - Se encontraron 16 regiones
+2025-12-11 22:24:49,820 - INFO - 
+============================================================
+2025-12-11 22:24:49,820 - INFO - PROCESANDO REGION: DE ARICA Y PARINACOTA -> Arica y Parinacota
+2025-12-11 22:24:49,820 - INFO - ============================================================
+2025-12-11 22:24:55,748 - INFO - Se encontraron 4 comunas en Arica y Parinacota
+2025-12-11 22:24:55,749 - INFO - Procesando: Arica - Arica y Parinacota
+2025-12-11 22:25:04,139 - INFO - Arica: 8 candidatos - Total: 1
+2025-12-11 22:25:04,140 - INFO - Procesando: Camarones - Arica y Parinacota
+2025-12-11 22:25:12,531 - INFO - Camarones: 8 candidatos - Total: 2
+2025-12-11 22:25:12,531 - INFO - Procesando: General Lagos - Arica y Parinacota
+2025-12-11 22:25:20,404 - INFO - General Lagos: 8 candidatos - Total: 3
+2025-12-11 22:25:20,406 - INFO - Procesando: Putre - Arica y Parinacota
+2025-12-11 22:25:28,670 - INFO - Putre: 8 candidatos - Total: 4
+2025-12-11 22:25:28,671 - INFO - 
+============================================================
+2025-12-11 22:25:28,671 - INFO - PROCESANDO REGION: DE TARAPACA -> Tarapacá
+2025-12-11 22:25:28,672 - INFO - ============================================================
+2025-12-11 22:25:34,986 - INFO - Se encontraron 7 comunas en Tarapacá
+2025-12-11 22:25:34,986 - INFO - Limite a 5 comunas para prueba
+2025-12-11 22:25:34,987 - INFO - Procesando: Alto Hospicio - Tarapacá
+2025-12-11 22:25:43,471 - INFO - Alto Hospicio: 8 candidatos - Total: 5
+2025-12-11 22:25:43,474 - INFO - Limite de comunas alcanzado
+2025-12-11 22:25:43,475 - INFO - Creando matriz completa de datos...
+2025-12-11 22:25:43,475 - INFO - Candidatos unicos: 8
+2025-12-11 22:25:43,476 - INFO - Totales unicos: 3
+2025-12-11 22:25:43,595 - INFO - CSV guardado: matriz_primera_vuelta_presidencial_2025_5_comunas_20251211_222543.csv
+2025-12-11 22:25:46,454 - INFO - Excel guardado: matriz_primera_vuelta_presidencial_2025_5_comunas_20251211_222543.xlsx
+2025-12-11 22:25:46,468 - INFO - Metadatos guardados: matriz_primera_vuelta_presidencial_2025_5_comunas_20251211_222543_METADATOS.txt
+2025-12-11 22:25:46,469 - INFO - 
+================================================================================
+2025-12-11 22:25:46,469 - INFO - EXTRACCION COMPLETADA
+2025-12-11 22:25:46,470 - INFO - ================================================================================
+2025-12-11 22:25:46,470 - INFO - Comunas procesadas exitosamente: 5
+2025-12-11 22:25:46,471 - INFO - Comunas con error: 0
+2025-12-11 22:25:46,471 - INFO - Total de comunas en el dataset: 5
+2025-12-11 22:25:46,472 - INFO - Regiones procesadas: 2
+2025-12-11 22:25:46,474 - INFO - Candidatos en el dataset: 8
+2025-12-11 22:25:46,474 - INFO - Metricas de totales: 3
+2025-12-11 22:25:46,475 - INFO - Columnas totales: 24
+2025-12-11 22:25:46,475 - INFO - 
+Distribucion por region:
+2025-12-11 22:25:46,490 - INFO -   Arica y Parinacota: 4 comunas
+2025-12-11 22:25:46,490 - INFO -   Tarapacá: 1 comunas
+2025-12-11 22:25:46,490 - INFO - Tiempo total de ejecucion: 1.80 minutos
+2025-12-11 22:25:51,185 - INFO - Navegador cerrado
+2025-12-11 22:31:36,058 - INFO - Iniciando extraccion de datos electorales...
+2025-12-11 22:31:36,059 - INFO - Intentando inicializar Chrome...
+2025-12-11 22:31:36,059 - INFO - Chrome encontrado en: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-12-11 22:31:36,191 - INFO - ====== WebDriver manager ======
+2025-12-11 22:31:37,600 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-11 22:31:38,033 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-11 22:31:38,439 - INFO - Driver [C:\Users\emers\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-11 22:31:39,899 - INFO - Chrome inicializado con webdriver-manager
+2025-12-11 22:31:39,901 - INFO - Navegador Chrome inicializado correctamente
+2025-12-11 22:31:39,901 - INFO - Navegando a: https://elecciones.servel.cl/
+2025-12-11 22:32:02,179 - INFO - Filtro 'Division Electoral Chile' activado
+2025-12-11 22:32:03,053 - INFO - Se encontraron 16 regiones
+2025-12-11 22:32:03,053 - INFO - 
+============================================================
+2025-12-11 22:32:03,053 - INFO - PROCESANDO REGION: DE ARICA Y PARINACOTA -> Arica y Parinacota
+2025-12-11 22:32:03,054 - INFO - ============================================================
+2025-12-11 22:32:08,683 - INFO - Se encontraron 4 comunas en Arica y Parinacota
+2025-12-11 22:32:08,685 - INFO - Procesando: Arica - Arica y Parinacota
+2025-12-11 22:32:16,434 - INFO - Arica: 8 candidatos - Total: 1
+2025-12-11 22:32:16,435 - INFO - Procesando: Camarones - Arica y Parinacota
+2025-12-11 22:32:23,347 - INFO - Camarones: 8 candidatos - Total: 2
+2025-12-11 22:32:23,348 - INFO - Procesando: General Lagos - Arica y Parinacota
+2025-12-11 22:32:30,160 - INFO - General Lagos: 8 candidatos - Total: 3
+2025-12-11 22:32:30,161 - INFO - Procesando: Putre - Arica y Parinacota
+2025-12-11 22:32:36,967 - INFO - Putre: 8 candidatos - Total: 4
+2025-12-11 22:32:36,967 - INFO - 
+============================================================
+2025-12-11 22:32:36,968 - INFO - PROCESANDO REGION: DE TARAPACA -> Tarapacá
+2025-12-11 22:32:36,968 - INFO - ============================================================
+2025-12-11 22:32:42,466 - INFO - Se encontraron 7 comunas en Tarapacá
+2025-12-11 22:32:42,467 - INFO - Procesando: Alto Hospicio - Tarapacá
+2025-12-11 22:32:49,289 - INFO - Alto Hospicio: 8 candidatos - Total: 5
+2025-12-11 22:32:49,290 - INFO - Procesando: Camiña - Tarapacá
+2025-12-11 22:32:56,204 - INFO - Camiña: 8 candidatos - Total: 6
+2025-12-11 22:32:56,205 - INFO - Procesando: Colchane - Tarapacá
+2025-12-11 22:33:02,967 - INFO - Colchane: 8 candidatos - Total: 7
+2025-12-11 22:33:02,967 - INFO - Procesando: Huara - Tarapacá
+2025-12-11 22:33:09,674 - INFO - Huara: 8 candidatos - Total: 8
+2025-12-11 22:33:09,674 - INFO - Procesando: Iquique - Tarapacá
+2025-12-11 22:33:16,319 - INFO - Iquique: 8 candidatos - Total: 9
+2025-12-11 22:33:16,319 - INFO - Procesando: Pica - Tarapacá
+2025-12-11 22:33:23,195 - INFO - Pica: 8 candidatos - Total: 10
+2025-12-11 22:33:23,195 - INFO - Creando matriz completa de datos...
+2025-12-11 22:33:23,195 - INFO - Candidatos unicos: 8
+2025-12-11 22:33:23,196 - INFO - Totales unicos: 3
+2025-12-11 22:33:23,211 - INFO - Progreso guardado: progreso_parcial_10_comunas_20251211_223323.csv
+2025-12-11 22:33:23,212 - INFO - Procesando: Pozo Almonte - Tarapacá
+2025-12-11 22:33:31,493 - INFO - Pozo Almonte: 8 candidatos - Total: 11
+2025-12-11 22:33:31,495 - INFO - 
+============================================================
+2025-12-11 22:33:31,496 - INFO - PROCESANDO REGION: DE ANTOFAGASTA -> Antofagasta
+2025-12-11 22:33:31,497 - INFO - ============================================================
+2025-12-11 22:33:37,506 - INFO - Se encontraron 9 comunas en Antofagasta
+2025-12-11 22:33:37,506 - INFO - Procesando: Antofagasta - Antofagasta
+2025-12-11 22:33:46,334 - INFO - Antofagasta: 8 candidatos - Total: 12
+2025-12-11 22:33:46,336 - INFO - Procesando: Calama - Antofagasta
+2025-12-11 22:33:54,694 - INFO - Calama: 8 candidatos - Total: 13
+2025-12-11 22:33:54,695 - INFO - Procesando: Maria Elena - Antofagasta
+2025-12-11 22:34:02,254 - INFO - Maria Elena: 8 candidatos - Total: 14
+2025-12-11 22:34:02,256 - INFO - Procesando: Mejillones - Antofagasta
+2025-12-11 22:34:09,838 - INFO - Mejillones: 8 candidatos - Total: 15
+2025-12-11 22:34:09,839 - INFO - Procesando: Ollague - Antofagasta
+2025-12-11 22:34:16,759 - INFO - Ollague: 8 candidatos - Total: 16
+2025-12-11 22:34:16,759 - INFO - Procesando: San Pedro de Atacama - Antofagasta
+2025-12-11 22:34:23,475 - INFO - San Pedro de Atacama: 8 candidatos - Total: 17
+2025-12-11 22:34:23,475 - INFO - Procesando: Sierra Gorda - Antofagasta
+2025-12-11 22:34:30,363 - INFO - Sierra Gorda: 8 candidatos - Total: 18
+2025-12-11 22:34:30,363 - INFO - Procesando: Taltal - Antofagasta
+2025-12-11 22:34:37,117 - INFO - Taltal: 8 candidatos - Total: 19
+2025-12-11 22:34:37,118 - INFO - Procesando: Tocopilla - Antofagasta
+2025-12-11 22:34:43,836 - INFO - Tocopilla: 8 candidatos - Total: 20
+2025-12-11 22:34:43,837 - INFO - Creando matriz completa de datos...
+2025-12-11 22:34:43,838 - INFO - Candidatos unicos: 8
+2025-12-11 22:34:43,838 - INFO - Totales unicos: 3
+2025-12-11 22:34:43,843 - INFO - Progreso guardado: progreso_parcial_20_comunas_20251211_223443.csv
+2025-12-11 22:34:43,844 - INFO - 
+============================================================
+2025-12-11 22:34:43,844 - INFO - PROCESANDO REGION: DE ATACAMA -> Atacama
+2025-12-11 22:34:43,844 - INFO - ============================================================
+2025-12-11 22:34:49,333 - INFO - Se encontraron 9 comunas en Atacama
+2025-12-11 22:34:49,333 - INFO - Procesando: Alto del Carmen - Atacama
+2025-12-11 22:34:56,025 - INFO - Alto del Carmen: 8 candidatos - Total: 21
+2025-12-11 22:34:56,026 - INFO - Procesando: Caldera - Atacama
+2025-12-11 22:35:03,403 - INFO - Caldera: 8 candidatos - Total: 22
+2025-12-11 22:35:03,403 - INFO - Procesando: Chañaral - Atacama
+2025-12-11 22:35:10,174 - INFO - Chañaral: 8 candidatos - Total: 23
+2025-12-11 22:35:10,175 - INFO - Procesando: Copiapo - Atacama
+2025-12-11 22:35:16,794 - INFO - Copiapo: 8 candidatos - Total: 24
+2025-12-11 22:35:16,795 - INFO - Procesando: Diego de Almagro - Atacama
+2025-12-11 22:35:23,381 - INFO - Diego de Almagro: 8 candidatos - Total: 25
+2025-12-11 22:35:23,381 - INFO - Procesando: Freirina - Atacama
+2025-12-11 22:35:30,066 - INFO - Freirina: 8 candidatos - Total: 26
+2025-12-11 22:35:30,067 - INFO - Procesando: Huasco - Atacama
+2025-12-11 22:35:36,711 - INFO - Huasco: 8 candidatos - Total: 27
+2025-12-11 22:35:36,712 - INFO - Procesando: Tierra Amarilla - Atacama
+2025-12-11 22:35:43,368 - INFO - Tierra Amarilla: 8 candidatos - Total: 28
+2025-12-11 22:35:43,368 - INFO - Procesando: Vallenar - Atacama
+2025-12-11 22:35:50,121 - INFO - Vallenar: 8 candidatos - Total: 29
+2025-12-11 22:35:50,121 - INFO - 
+============================================================
+2025-12-11 22:35:50,121 - INFO - PROCESANDO REGION: DE COQUIMBO -> Coquimbo
+2025-12-11 22:35:50,121 - INFO - ============================================================
+2025-12-11 22:35:56,383 - INFO - Se encontraron 15 comunas en Coquimbo
+2025-12-11 22:35:56,384 - INFO - Procesando: Andacollo - Coquimbo
+2025-12-11 22:36:03,769 - INFO - Andacollo: 8 candidatos - Total: 30
+2025-12-11 22:36:03,770 - INFO - Creando matriz completa de datos...
+2025-12-11 22:36:03,770 - INFO - Candidatos unicos: 8
+2025-12-11 22:36:03,771 - INFO - Totales unicos: 3
+2025-12-11 22:36:03,787 - INFO - Progreso guardado: progreso_parcial_30_comunas_20251211_223603.csv
+2025-12-11 22:36:03,787 - INFO - Procesando: Canela - Coquimbo
+2025-12-11 22:36:11,201 - INFO - Canela: 8 candidatos - Total: 31
+2025-12-11 22:36:11,201 - INFO - Procesando: Combarbala - Coquimbo
+2025-12-11 22:36:17,981 - INFO - Combarbala: 8 candidatos - Total: 32
+2025-12-11 22:36:17,981 - INFO - Procesando: Coquimbo - Coquimbo
+2025-12-11 22:36:24,783 - INFO - Coquimbo: 8 candidatos - Total: 33
+2025-12-11 22:36:24,783 - INFO - Procesando: Illapel - Coquimbo
+2025-12-11 22:36:32,355 - INFO - Illapel: 8 candidatos - Total: 34
+2025-12-11 22:36:32,356 - INFO - Procesando: la Higuera - Coquimbo
+2025-12-11 22:36:40,035 - INFO - la Higuera: 8 candidatos - Total: 35
+2025-12-11 22:36:40,036 - INFO - Procesando: la Serena - Coquimbo
+2025-12-11 22:36:47,864 - INFO - la Serena: 8 candidatos - Total: 36
+2025-12-11 22:36:47,865 - INFO - Procesando: los Vilos - Coquimbo
+2025-12-11 22:36:55,679 - INFO - los Vilos: 8 candidatos - Total: 37
+2025-12-11 22:36:55,680 - INFO - Procesando: Monte Patria - Coquimbo
+2025-12-11 22:37:03,540 - INFO - Monte Patria: 8 candidatos - Total: 38
+2025-12-11 22:37:03,542 - INFO - Procesando: Ovalle - Coquimbo
+2025-12-11 22:37:11,310 - INFO - Ovalle: 8 candidatos - Total: 39
+2025-12-11 22:37:11,311 - INFO - Procesando: Paihuano - Coquimbo
+2025-12-11 22:37:19,093 - INFO - Paihuano: 8 candidatos - Total: 40
+2025-12-11 22:37:19,094 - INFO - Creando matriz completa de datos...
+2025-12-11 22:37:19,095 - INFO - Candidatos unicos: 8
+2025-12-11 22:37:19,095 - INFO - Totales unicos: 3
+2025-12-11 22:37:19,116 - INFO - Progreso guardado: progreso_parcial_40_comunas_20251211_223719.csv
+2025-12-11 22:37:19,118 - INFO - Procesando: Punitaqui - Coquimbo
+2025-12-11 22:37:27,056 - INFO - Punitaqui: 8 candidatos - Total: 41
+2025-12-11 22:37:27,057 - INFO - Procesando: Rio Hurtado - Coquimbo
+2025-12-11 22:37:34,879 - INFO - Rio Hurtado: 8 candidatos - Total: 42
+2025-12-11 22:37:34,879 - INFO - Procesando: Salamanca - Coquimbo
+2025-12-11 22:37:41,916 - INFO - Salamanca: 8 candidatos - Total: 43
+2025-12-11 22:37:41,916 - INFO - Procesando: Vicuña - Coquimbo
+2025-12-11 22:37:48,926 - INFO - Vicuña: 8 candidatos - Total: 44
+2025-12-11 22:37:48,927 - INFO - 
+============================================================
+2025-12-11 22:37:48,928 - INFO - PROCESANDO REGION: DE VALPARAISO -> Valparaíso
+2025-12-11 22:37:48,928 - INFO - ============================================================
+2025-12-11 22:37:55,636 - INFO - Se encontraron 38 comunas en Valparaíso
+2025-12-11 22:37:55,636 - INFO - Procesando: Algarrobo - Valparaíso
+2025-12-11 22:38:02,482 - INFO - Algarrobo: 8 candidatos - Total: 45
+2025-12-11 22:38:02,482 - INFO - Procesando: Cabildo - Valparaíso
+2025-12-11 22:38:09,377 - INFO - Cabildo: 8 candidatos - Total: 46
+2025-12-11 22:38:09,378 - INFO - Procesando: Calera - Valparaíso
+2025-12-11 22:38:16,527 - INFO - Calera: 8 candidatos - Total: 47
+2025-12-11 22:38:16,527 - INFO - Procesando: Calle Larga - Valparaíso
+2025-12-11 22:38:24,092 - INFO - Calle Larga: 8 candidatos - Total: 48
+2025-12-11 22:38:24,093 - INFO - Procesando: Cartagena - Valparaíso
+2025-12-11 22:38:31,701 - INFO - Cartagena: 8 candidatos - Total: 49
+2025-12-11 22:38:31,703 - INFO - Procesando: Casablanca - Valparaíso
+2025-12-11 22:38:39,323 - INFO - Casablanca: 8 candidatos - Total: 50
+2025-12-11 22:38:39,324 - INFO - Creando matriz completa de datos...
+2025-12-11 22:38:39,324 - INFO - Candidatos unicos: 8
+2025-12-11 22:38:39,325 - INFO - Totales unicos: 3
+2025-12-11 22:38:39,341 - INFO - Progreso guardado: progreso_parcial_50_comunas_20251211_223839.csv
+2025-12-11 22:38:39,344 - INFO - Procesando: Catemu - Valparaíso
+2025-12-11 22:38:46,943 - INFO - Catemu: 8 candidatos - Total: 51
+2025-12-11 22:38:46,945 - INFO - Procesando: Concon - Valparaíso
+2025-12-11 22:38:54,475 - INFO - Concon: 8 candidatos - Total: 52
+2025-12-11 22:38:54,476 - INFO - Procesando: El Quisco - Valparaíso
+2025-12-11 22:39:01,604 - INFO - El Quisco: 8 candidatos - Total: 53
+2025-12-11 22:39:01,605 - INFO - Procesando: El Tabo - Valparaíso
+2025-12-11 22:39:08,416 - INFO - El Tabo: 8 candidatos - Total: 54
+2025-12-11 22:39:08,417 - INFO - Procesando: Hijuelas - Valparaíso
+2025-12-11 22:39:15,232 - INFO - Hijuelas: 8 candidatos - Total: 55
+2025-12-11 22:39:15,232 - INFO - Procesando: Isla de Pascua - Valparaíso
+2025-12-11 22:39:22,673 - INFO - Isla de Pascua: 8 candidatos - Total: 56
+2025-12-11 22:39:22,673 - INFO - Procesando: Juan Fernandez - Valparaíso
+2025-12-11 22:39:29,524 - INFO - Juan Fernandez: 8 candidatos - Total: 57
+2025-12-11 22:39:29,525 - INFO - Procesando: la Cruz - Valparaíso
+2025-12-11 22:39:36,284 - INFO - la Cruz: 8 candidatos - Total: 58
+2025-12-11 22:39:36,285 - INFO - Procesando: la Ligua - Valparaíso
+2025-12-11 22:39:42,961 - INFO - la Ligua: 8 candidatos - Total: 59
+2025-12-11 22:39:42,962 - INFO - Procesando: Limache - Valparaíso
+2025-12-11 22:39:49,627 - INFO - Limache: 8 candidatos - Total: 60
+2025-12-11 22:39:49,628 - INFO - Creando matriz completa de datos...
+2025-12-11 22:39:49,628 - INFO - Candidatos unicos: 8
+2025-12-11 22:39:49,628 - INFO - Totales unicos: 3
+2025-12-11 22:39:49,632 - INFO - Progreso guardado: progreso_parcial_60_comunas_20251211_223949.csv
+2025-12-11 22:39:49,632 - INFO - Procesando: Llay-llay - Valparaíso
+2025-12-11 22:39:56,368 - INFO - Llay-llay: 8 candidatos - Total: 61
+2025-12-11 22:39:56,368 - INFO - Procesando: los Andes - Valparaíso
+2025-12-11 22:40:03,052 - INFO - los Andes: 8 candidatos - Total: 62
+2025-12-11 22:40:03,052 - INFO - Procesando: Nogales - Valparaíso
+2025-12-11 22:40:10,265 - INFO - Nogales: 8 candidatos - Total: 63
+2025-12-11 22:40:10,265 - INFO - Procesando: Olmue - Valparaíso
+2025-12-11 22:40:18,199 - INFO - Olmue: 8 candidatos - Total: 64
+2025-12-11 22:40:18,200 - INFO - Procesando: Panquehue - Valparaíso
+2025-12-11 22:40:26,025 - INFO - Panquehue: 8 candidatos - Total: 65
+2025-12-11 22:40:26,026 - INFO - Procesando: Papudo - Valparaíso
+2025-12-11 22:40:33,690 - INFO - Papudo: 8 candidatos - Total: 66
+2025-12-11 22:40:33,691 - INFO - Procesando: Petorca - Valparaíso
+2025-12-11 22:40:41,249 - INFO - Petorca: 8 candidatos - Total: 67
+2025-12-11 22:40:41,249 - INFO - Procesando: Puchuncavi - Valparaíso
+2025-12-11 22:40:48,023 - INFO - Puchuncavi: 8 candidatos - Total: 68
+2025-12-11 22:40:48,024 - INFO - Procesando: Putaendo - Valparaíso
+2025-12-11 22:40:54,717 - INFO - Putaendo: 8 candidatos - Total: 69
+2025-12-11 22:40:54,718 - INFO - Procesando: Quillota - Valparaíso
+2025-12-11 22:41:01,372 - INFO - Quillota: 8 candidatos - Total: 70
+2025-12-11 22:41:01,372 - INFO - Creando matriz completa de datos...
+2025-12-11 22:41:01,374 - INFO - Candidatos unicos: 8
+2025-12-11 22:41:01,375 - INFO - Totales unicos: 3
+2025-12-11 22:41:01,378 - INFO - Progreso guardado: progreso_parcial_70_comunas_20251211_224101.csv
+2025-12-11 22:41:01,379 - INFO - Procesando: Quilpue - Valparaíso
+2025-12-11 22:41:08,110 - INFO - Quilpue: 8 candidatos - Total: 71
+2025-12-11 22:41:08,111 - INFO - Procesando: Quintero - Valparaíso
+2025-12-11 22:41:14,814 - INFO - Quintero: 8 candidatos - Total: 72
+2025-12-11 22:41:14,814 - INFO - Procesando: Rinconada - Valparaíso
+2025-12-11 22:41:21,660 - INFO - Rinconada: 8 candidatos - Total: 73
+2025-12-11 22:41:21,661 - INFO - Procesando: San Antonio - Valparaíso
+2025-12-11 22:41:28,501 - INFO - San Antonio: 8 candidatos - Total: 74
+2025-12-11 22:41:28,501 - INFO - Procesando: San Esteban - Valparaíso
+2025-12-11 22:41:35,189 - INFO - San Esteban: 8 candidatos - Total: 75
+2025-12-11 22:41:35,189 - INFO - Procesando: San Felipe - Valparaíso
+2025-12-11 22:41:41,918 - INFO - San Felipe: 8 candidatos - Total: 76
+2025-12-11 22:41:41,918 - INFO - Procesando: Santa Maria - Valparaíso
+2025-12-11 22:41:48,622 - INFO - Santa Maria: 8 candidatos - Total: 77
+2025-12-11 22:41:48,623 - INFO - Procesando: Santo Domingo - Valparaíso
+2025-12-11 22:41:55,466 - INFO - Santo Domingo: 8 candidatos - Total: 78
+2025-12-11 22:41:55,467 - INFO - Procesando: Valparaiso - Valparaíso
+2025-12-11 22:42:02,285 - INFO - Valparaiso: 8 candidatos - Total: 79
+2025-12-11 22:42:02,286 - INFO - Procesando: Villa Alemana - Valparaíso
+2025-12-11 22:42:09,033 - INFO - Villa Alemana: 8 candidatos - Total: 80
+2025-12-11 22:42:09,034 - INFO - Creando matriz completa de datos...
+2025-12-11 22:42:09,034 - INFO - Candidatos unicos: 8
+2025-12-11 22:42:09,035 - INFO - Totales unicos: 3
+2025-12-11 22:42:09,041 - INFO - Progreso guardado: progreso_parcial_80_comunas_20251211_224209.csv
+2025-12-11 22:42:09,041 - INFO - Procesando: Viña del Mar - Valparaíso
+2025-12-11 22:42:15,889 - INFO - Viña del Mar: 8 candidatos - Total: 81
+2025-12-11 22:42:15,889 - INFO - Procesando: Zapallar - Valparaíso
+2025-12-11 22:42:22,629 - INFO - Zapallar: 8 candidatos - Total: 82
+2025-12-11 22:42:22,629 - INFO - 
+============================================================
+2025-12-11 22:42:22,630 - INFO - PROCESANDO REGION: METROPOLITANA DE SANTIAGO -> Metropolitana
+2025-12-11 22:42:22,630 - INFO - ============================================================
+2025-12-11 22:42:29,224 - INFO - Se encontraron 52 comunas en Metropolitana
+2025-12-11 22:42:29,224 - INFO - Procesando: Alhue - Metropolitana
+2025-12-11 22:42:35,951 - INFO - Alhue: 8 candidatos - Total: 83
+2025-12-11 22:42:35,952 - INFO - Procesando: Buin - Metropolitana
+2025-12-11 22:42:42,628 - INFO - Buin: 8 candidatos - Total: 84
+2025-12-11 22:42:42,628 - INFO - Procesando: Calera de Tango - Metropolitana
+2025-12-11 22:42:49,306 - INFO - Calera de Tango: 8 candidatos - Total: 85
+2025-12-11 22:42:49,306 - INFO - Procesando: Cerrillos - Metropolitana
+2025-12-11 22:42:56,027 - INFO - Cerrillos: 8 candidatos - Total: 86
+2025-12-11 22:42:56,028 - INFO - Procesando: Cerro Navia - Metropolitana
+2025-12-11 22:43:02,732 - INFO - Cerro Navia: 8 candidatos - Total: 87
+2025-12-11 22:43:02,732 - INFO - Procesando: Colina - Metropolitana
+2025-12-11 22:43:09,458 - INFO - Colina: 8 candidatos - Total: 88
+2025-12-11 22:43:09,459 - INFO - Procesando: Conchali - Metropolitana
+2025-12-11 22:43:16,140 - INFO - Conchali: 8 candidatos - Total: 89
+2025-12-11 22:43:16,140 - INFO - Procesando: Curacavi - Metropolitana
+2025-12-11 22:43:22,857 - INFO - Curacavi: 8 candidatos - Total: 90
+2025-12-11 22:43:22,857 - INFO - Creando matriz completa de datos...
+2025-12-11 22:43:22,857 - INFO - Candidatos unicos: 8
+2025-12-11 22:43:22,857 - INFO - Totales unicos: 3
+2025-12-11 22:43:22,861 - INFO - Progreso guardado: progreso_parcial_90_comunas_20251211_224322.csv
+2025-12-11 22:43:22,862 - INFO - Procesando: El Bosque - Metropolitana
+2025-12-11 22:43:29,615 - INFO - El Bosque: 8 candidatos - Total: 91
+2025-12-11 22:43:29,615 - INFO - Procesando: El Monte - Metropolitana
+2025-12-11 22:43:36,278 - INFO - El Monte: 8 candidatos - Total: 92
+2025-12-11 22:43:36,278 - INFO - Procesando: Estacion Central - Metropolitana
+2025-12-11 22:43:42,965 - INFO - Estacion Central: 8 candidatos - Total: 93
+2025-12-11 22:43:42,965 - INFO - Procesando: Huechuraba - Metropolitana
+2025-12-11 22:43:49,630 - INFO - Huechuraba: 8 candidatos - Total: 94
+2025-12-11 22:43:49,631 - INFO - Procesando: Independencia - Metropolitana
+2025-12-11 22:43:56,305 - INFO - Independencia: 8 candidatos - Total: 95
+2025-12-11 22:43:56,305 - INFO - Procesando: Isla de Maipo - Metropolitana
+2025-12-11 22:44:02,945 - INFO - Isla de Maipo: 8 candidatos - Total: 96
+2025-12-11 22:44:02,946 - INFO - Procesando: la Cisterna - Metropolitana
+2025-12-11 22:44:09,638 - INFO - la Cisterna: 8 candidatos - Total: 97
+2025-12-11 22:44:09,638 - INFO - Procesando: la Florida - Metropolitana
+2025-12-11 22:44:16,324 - INFO - la Florida: 8 candidatos - Total: 98
+2025-12-11 22:44:16,325 - INFO - Procesando: la Granja - Metropolitana
+2025-12-11 22:44:23,124 - INFO - la Granja: 8 candidatos - Total: 99
+2025-12-11 22:44:23,124 - INFO - Procesando: la Pintana - Metropolitana
+2025-12-11 22:44:29,788 - INFO - la Pintana: 8 candidatos - Total: 100
+2025-12-11 22:44:29,788 - INFO - Creando matriz completa de datos...
+2025-12-11 22:44:29,788 - INFO - Candidatos unicos: 8
+2025-12-11 22:44:29,788 - INFO - Totales unicos: 3
+2025-12-11 22:44:29,797 - INFO - Progreso guardado: progreso_parcial_100_comunas_20251211_224429.csv
+2025-12-11 22:44:29,797 - INFO - Procesando: la Reina - Metropolitana
+2025-12-11 22:44:36,530 - INFO - la Reina: 8 candidatos - Total: 101
+2025-12-11 22:44:36,530 - INFO - Procesando: Lampa - Metropolitana
+2025-12-11 22:44:43,346 - INFO - Lampa: 8 candidatos - Total: 102
+2025-12-11 22:44:43,346 - INFO - Procesando: las Condes - Metropolitana
+2025-12-11 22:44:50,046 - INFO - las Condes: 8 candidatos - Total: 103
+2025-12-11 22:44:50,046 - INFO - Procesando: Lo Barnechea - Metropolitana
+2025-12-11 22:44:56,708 - INFO - Lo Barnechea: 8 candidatos - Total: 104
+2025-12-11 22:44:56,709 - INFO - Procesando: Lo Espejo - Metropolitana
+2025-12-11 22:45:03,445 - INFO - Lo Espejo: 8 candidatos - Total: 105
+2025-12-11 22:45:03,446 - INFO - Procesando: Lo Prado - Metropolitana
+2025-12-11 22:45:10,129 - INFO - Lo Prado: 8 candidatos - Total: 106
+2025-12-11 22:45:10,129 - INFO - Procesando: Macul - Metropolitana
+2025-12-11 22:45:16,832 - INFO - Macul: 8 candidatos - Total: 107
+2025-12-11 22:45:16,833 - INFO - Procesando: Maipu - Metropolitana
+2025-12-11 22:45:23,559 - INFO - Maipu: 8 candidatos - Total: 108
+2025-12-11 22:45:23,559 - INFO - Procesando: Maria Pinto - Metropolitana
+2025-12-11 22:45:30,240 - INFO - Maria Pinto: 8 candidatos - Total: 109
+2025-12-11 22:45:30,240 - INFO - Procesando: Melipilla - Metropolitana
+2025-12-11 22:45:36,899 - INFO - Melipilla: 8 candidatos - Total: 110
+2025-12-11 22:45:36,899 - INFO - Creando matriz completa de datos...
+2025-12-11 22:45:36,899 - INFO - Candidatos unicos: 8
+2025-12-11 22:45:36,900 - INFO - Totales unicos: 3
+2025-12-11 22:45:36,906 - INFO - Progreso guardado: progreso_parcial_110_comunas_20251211_224536.csv
+2025-12-11 22:45:36,906 - INFO - Procesando: ÑUñoa - Metropolitana
+2025-12-11 22:45:43,636 - INFO - ÑUñoa: 8 candidatos - Total: 111
+2025-12-11 22:45:43,637 - INFO - Procesando: Padre Hurtado - Metropolitana
+2025-12-11 22:45:50,317 - INFO - Padre Hurtado: 8 candidatos - Total: 112
+2025-12-11 22:45:50,317 - INFO - Procesando: Paine - Metropolitana
+2025-12-11 22:45:57,016 - INFO - Paine: 8 candidatos - Total: 113
+2025-12-11 22:45:57,016 - INFO - Procesando: Pedro Aguirre Cerda - Metropolitana
+2025-12-11 22:46:03,722 - INFO - Pedro Aguirre Cerda: 8 candidatos - Total: 114
+2025-12-11 22:46:03,722 - INFO - Procesando: Peñaflor - Metropolitana
+2025-12-11 22:46:10,408 - INFO - Peñaflor: 8 candidatos - Total: 115
+2025-12-11 22:46:10,409 - INFO - Procesando: Peñalolen - Metropolitana
+2025-12-11 22:46:17,057 - INFO - Peñalolen: 8 candidatos - Total: 116
+2025-12-11 22:46:17,057 - INFO - Procesando: Pirque - Metropolitana
+2025-12-11 22:46:24,223 - INFO - Pirque: 8 candidatos - Total: 117
+2025-12-11 22:46:24,225 - INFO - Procesando: Providencia - Metropolitana
+2025-12-11 22:46:30,882 - INFO - Providencia: 8 candidatos - Total: 118
+2025-12-11 22:46:30,882 - INFO - Procesando: Pudahuel - Metropolitana
+2025-12-11 22:46:37,666 - INFO - Pudahuel: 8 candidatos - Total: 119
+2025-12-11 22:46:37,666 - INFO - Procesando: Puente Alto - Metropolitana
+2025-12-11 22:46:44,321 - INFO - Puente Alto: 8 candidatos - Total: 120
+2025-12-11 22:46:44,322 - INFO - Creando matriz completa de datos...
+2025-12-11 22:46:44,322 - INFO - Candidatos unicos: 8
+2025-12-11 22:46:44,322 - INFO - Totales unicos: 3
+2025-12-11 22:46:44,328 - INFO - Progreso guardado: progreso_parcial_120_comunas_20251211_224644.csv
+2025-12-11 22:46:44,328 - INFO - Procesando: Quilicura - Metropolitana
+2025-12-11 22:46:50,973 - INFO - Quilicura: 8 candidatos - Total: 121
+2025-12-11 22:46:50,973 - INFO - Procesando: Quinta Normal - Metropolitana
+2025-12-11 22:46:57,627 - INFO - Quinta Normal: 8 candidatos - Total: 122
+2025-12-11 22:46:57,627 - INFO - Procesando: Recoleta - Metropolitana
+2025-12-11 22:47:04,263 - INFO - Recoleta: 8 candidatos - Total: 123
+2025-12-11 22:47:04,263 - INFO - Procesando: Renca - Metropolitana
+2025-12-11 22:47:10,895 - INFO - Renca: 8 candidatos - Total: 124
+2025-12-11 22:47:10,895 - INFO - Procesando: San Bernardo - Metropolitana
+2025-12-11 22:47:17,502 - INFO - San Bernardo: 8 candidatos - Total: 125
+2025-12-11 22:47:17,503 - INFO - Procesando: San Joaquin - Metropolitana
+2025-12-11 22:47:24,101 - INFO - San Joaquin: 8 candidatos - Total: 126
+2025-12-11 22:47:24,102 - INFO - Procesando: San Jose de Maipo - Metropolitana
+2025-12-11 22:47:30,694 - INFO - San Jose de Maipo: 8 candidatos - Total: 127
+2025-12-11 22:47:30,694 - INFO - Procesando: San Miguel - Metropolitana
+2025-12-11 22:47:37,312 - INFO - San Miguel: 8 candidatos - Total: 128
+2025-12-11 22:47:37,313 - INFO - Procesando: San Pedro - Metropolitana
+2025-12-11 22:47:43,942 - INFO - San Pedro: 8 candidatos - Total: 129
+2025-12-11 22:47:43,942 - INFO - Procesando: San Ramon - Metropolitana
+2025-12-11 22:47:50,566 - INFO - San Ramon: 8 candidatos - Total: 130
+2025-12-11 22:47:50,566 - INFO - Creando matriz completa de datos...
+2025-12-11 22:47:50,566 - INFO - Candidatos unicos: 8
+2025-12-11 22:47:50,567 - INFO - Totales unicos: 3
+2025-12-11 22:47:50,575 - INFO - Progreso guardado: progreso_parcial_130_comunas_20251211_224750.csv
+2025-12-11 22:47:50,575 - INFO - Procesando: Santiago - Metropolitana
+2025-12-11 22:47:58,152 - INFO - Santiago: 8 candidatos - Total: 131
+2025-12-11 22:47:58,152 - INFO - Procesando: Talagante - Metropolitana
+2025-12-11 22:48:05,298 - INFO - Talagante: 8 candidatos - Total: 132
+2025-12-11 22:48:05,298 - INFO - Procesando: Tiltil - Metropolitana
+2025-12-11 22:48:12,013 - INFO - Tiltil: 8 candidatos - Total: 133
+2025-12-11 22:48:12,014 - INFO - Procesando: Vitacura - Metropolitana
+2025-12-11 22:48:18,659 - INFO - Vitacura: 8 candidatos - Total: 134
+2025-12-11 22:48:18,660 - INFO - 
+============================================================
+2025-12-11 22:48:18,660 - INFO - PROCESANDO REGION: DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS -> Libertador
+2025-12-11 22:48:18,660 - INFO - ============================================================
+2025-12-11 22:48:24,836 - INFO - Se encontraron 33 comunas en Libertador
+2025-12-11 22:48:24,836 - INFO - Procesando: Chepica - Libertador
+2025-12-11 22:48:31,495 - INFO - Chepica: 8 candidatos - Total: 135
+2025-12-11 22:48:31,495 - INFO - Procesando: Chimbarongo - Libertador
+2025-12-11 22:48:38,130 - INFO - Chimbarongo: 8 candidatos - Total: 136
+2025-12-11 22:48:38,130 - INFO - Procesando: Codegua - Libertador
+2025-12-11 22:48:44,859 - INFO - Codegua: 8 candidatos - Total: 137
+2025-12-11 22:48:44,859 - INFO - Procesando: Coinco - Libertador
+2025-12-11 22:48:51,488 - INFO - Coinco: 8 candidatos - Total: 138
+2025-12-11 22:48:51,489 - INFO - Procesando: Coltauco - Libertador
+2025-12-11 22:48:58,122 - INFO - Coltauco: 8 candidatos - Total: 139
+2025-12-11 22:48:58,122 - INFO - Procesando: Doñihue - Libertador
+2025-12-11 22:49:04,735 - INFO - Doñihue: 8 candidatos - Total: 140
+2025-12-11 22:49:04,736 - INFO - Creando matriz completa de datos...
+2025-12-11 22:49:04,736 - INFO - Candidatos unicos: 8
+2025-12-11 22:49:04,736 - INFO - Totales unicos: 3
+2025-12-11 22:49:04,742 - INFO - Progreso guardado: progreso_parcial_140_comunas_20251211_224904.csv
+2025-12-11 22:49:04,742 - INFO - Procesando: Graneros - Libertador
+2025-12-11 22:49:11,375 - INFO - Graneros: 8 candidatos - Total: 141
+2025-12-11 22:49:11,375 - INFO - Procesando: la Estrella - Libertador
+2025-12-11 22:49:18,038 - INFO - la Estrella: 8 candidatos - Total: 142
+2025-12-11 22:49:18,038 - INFO - Procesando: las Cabras - Libertador
+2025-12-11 22:49:24,692 - INFO - las Cabras: 8 candidatos - Total: 143
+2025-12-11 22:49:24,693 - INFO - Procesando: Litueche - Libertador
+2025-12-11 22:49:31,313 - INFO - Litueche: 8 candidatos - Total: 144
+2025-12-11 22:49:31,313 - INFO - Procesando: Lolol - Libertador
+2025-12-11 22:49:37,920 - INFO - Lolol: 8 candidatos - Total: 145
+2025-12-11 22:49:37,920 - INFO - Procesando: Machali - Libertador
+2025-12-11 22:49:44,565 - INFO - Machali: 8 candidatos - Total: 146
+2025-12-11 22:49:44,566 - INFO - Procesando: Malloa - Libertador
+2025-12-11 22:49:51,211 - INFO - Malloa: 8 candidatos - Total: 147
+2025-12-11 22:49:51,211 - INFO - Procesando: Marchigue - Libertador
+2025-12-11 22:49:57,952 - INFO - Marchigue: 8 candidatos - Total: 148
+2025-12-11 22:49:57,952 - INFO - Procesando: Mostazal - Libertador
+2025-12-11 22:50:04,534 - INFO - Mostazal: 8 candidatos - Total: 149
+2025-12-11 22:50:04,535 - INFO - Procesando: Nancagua - Libertador
+2025-12-11 22:50:11,161 - INFO - Nancagua: 8 candidatos - Total: 150
+2025-12-11 22:50:11,161 - INFO - Creando matriz completa de datos...
+2025-12-11 22:50:11,162 - INFO - Candidatos unicos: 8
+2025-12-11 22:50:11,162 - INFO - Totales unicos: 3
+2025-12-11 22:50:11,169 - INFO - Progreso guardado: progreso_parcial_150_comunas_20251211_225011.csv
+2025-12-11 22:50:11,169 - INFO - Procesando: Navidad - Libertador
+2025-12-11 22:50:17,897 - INFO - Navidad: 8 candidatos - Total: 151
+2025-12-11 22:50:17,898 - INFO - Procesando: Olivar - Libertador
+2025-12-11 22:50:24,564 - INFO - Olivar: 8 candidatos - Total: 152
+2025-12-11 22:50:24,564 - INFO - Procesando: Palmilla - Libertador
+2025-12-11 22:50:31,231 - INFO - Palmilla: 8 candidatos - Total: 153
+2025-12-11 22:50:31,232 - INFO - Procesando: Paredones - Libertador
+2025-12-11 22:50:37,872 - INFO - Paredones: 8 candidatos - Total: 154
+2025-12-11 22:50:37,872 - INFO - Procesando: Peralillo - Libertador
+2025-12-11 22:50:44,478 - INFO - Peralillo: 8 candidatos - Total: 155
+2025-12-11 22:50:44,478 - INFO - Procesando: Peumo - Libertador
+2025-12-11 22:50:51,086 - INFO - Peumo: 8 candidatos - Total: 156
+2025-12-11 22:50:51,086 - INFO - Procesando: Pichidegua - Libertador
+2025-12-11 22:50:57,700 - INFO - Pichidegua: 8 candidatos - Total: 157
+2025-12-11 22:50:57,700 - INFO - Procesando: Pichilemu - Libertador
+2025-12-11 22:51:04,298 - INFO - Pichilemu: 8 candidatos - Total: 158
+2025-12-11 22:51:04,298 - INFO - Procesando: Placilla - Libertador
+2025-12-11 22:51:10,921 - INFO - Placilla: 8 candidatos - Total: 159
+2025-12-11 22:51:10,921 - INFO - Procesando: Pumanque - Libertador
+2025-12-11 22:51:17,550 - INFO - Pumanque: 8 candidatos - Total: 160
+2025-12-11 22:51:17,551 - INFO - Creando matriz completa de datos...
+2025-12-11 22:51:17,551 - INFO - Candidatos unicos: 8
+2025-12-11 22:51:17,551 - INFO - Totales unicos: 3
+2025-12-11 22:51:17,556 - INFO - Progreso guardado: progreso_parcial_160_comunas_20251211_225117.csv
+2025-12-11 22:51:17,557 - INFO - Procesando: Quinta de Tilcoco - Libertador
+2025-12-11 22:51:24,235 - INFO - Quinta de Tilcoco: 8 candidatos - Total: 161
+2025-12-11 22:51:24,236 - INFO - Procesando: Rancagua - Libertador
+2025-12-11 22:51:30,843 - INFO - Rancagua: 8 candidatos - Total: 162
+2025-12-11 22:51:30,843 - INFO - Procesando: Rengo - Libertador
+2025-12-11 22:51:37,504 - INFO - Rengo: 8 candidatos - Total: 163
+2025-12-11 22:51:37,504 - INFO - Procesando: Requinoa - Libertador
+2025-12-11 22:51:44,168 - INFO - Requinoa: 8 candidatos - Total: 164
+2025-12-11 22:51:44,169 - INFO - Procesando: San Fernando - Libertador
+2025-12-11 22:51:50,837 - INFO - San Fernando: 8 candidatos - Total: 165
+2025-12-11 22:51:50,837 - INFO - Procesando: San Vicente - Libertador
+2025-12-11 22:51:57,562 - INFO - San Vicente: 8 candidatos - Total: 166
+2025-12-11 22:51:57,562 - INFO - Procesando: Santa Cruz - Libertador
+2025-12-11 22:52:04,207 - INFO - Santa Cruz: 8 candidatos - Total: 167
+2025-12-11 22:52:04,207 - INFO - 
+============================================================
+2025-12-11 22:52:04,208 - INFO - PROCESANDO REGION: DEL MAULE -> Maule
+2025-12-11 22:52:04,208 - INFO - ============================================================
+2025-12-11 22:52:10,111 - INFO - Se encontraron 30 comunas en Maule
+2025-12-11 22:52:10,111 - INFO - Procesando: Cauquenes - Maule
+2025-12-11 22:52:16,703 - INFO - Cauquenes: 8 candidatos - Total: 168
+2025-12-11 22:52:16,704 - INFO - Procesando: Chanco - Maule
+2025-12-11 22:52:23,311 - INFO - Chanco: 8 candidatos - Total: 169
+2025-12-11 22:52:23,311 - INFO - Procesando: Colbun - Maule
+2025-12-11 22:52:29,923 - INFO - Colbun: 8 candidatos - Total: 170
+2025-12-11 22:52:29,923 - INFO - Creando matriz completa de datos...
+2025-12-11 22:52:29,923 - INFO - Candidatos unicos: 8
+2025-12-11 22:52:29,923 - INFO - Totales unicos: 3
+2025-12-11 22:52:29,934 - INFO - Progreso guardado: progreso_parcial_170_comunas_20251211_225229.csv
+2025-12-11 22:52:29,934 - INFO - Procesando: Constitucion - Maule
+2025-12-11 22:52:36,526 - INFO - Constitucion: 8 candidatos - Total: 171
+2025-12-11 22:52:36,526 - INFO - Procesando: Curepto - Maule
+2025-12-11 22:52:43,112 - INFO - Curepto: 8 candidatos - Total: 172
+2025-12-11 22:52:43,112 - INFO - Procesando: Curico - Maule
+2025-12-11 22:52:49,725 - INFO - Curico: 8 candidatos - Total: 173
+2025-12-11 22:52:49,725 - INFO - Procesando: Empedrado - Maule
+2025-12-11 22:52:56,333 - INFO - Empedrado: 8 candidatos - Total: 174
+2025-12-11 22:52:56,334 - INFO - Procesando: Hualañe - Maule
+2025-12-11 22:53:03,485 - INFO - Hualañe: 8 candidatos - Total: 175
+2025-12-11 22:53:03,485 - INFO - Procesando: Licanten - Maule
+2025-12-11 22:53:10,097 - INFO - Licanten: 8 candidatos - Total: 176
+2025-12-11 22:53:10,097 - INFO - Procesando: Linares - Maule
+2025-12-11 22:53:16,733 - INFO - Linares: 8 candidatos - Total: 177
+2025-12-11 22:53:16,733 - INFO - Procesando: Longavi - Maule
+2025-12-11 22:53:23,335 - INFO - Longavi: 8 candidatos - Total: 178
+2025-12-11 22:53:23,336 - INFO - Procesando: Maule - Maule
+2025-12-11 22:53:30,000 - INFO - Maule: 8 candidatos - Total: 179
+2025-12-11 22:53:30,000 - INFO - Procesando: Molina - Maule
+2025-12-11 22:53:37,414 - INFO - Molina: 8 candidatos - Total: 180
+2025-12-11 22:53:37,414 - INFO - Creando matriz completa de datos...
+2025-12-11 22:53:37,415 - INFO - Candidatos unicos: 8
+2025-12-11 22:53:37,415 - INFO - Totales unicos: 3
+2025-12-11 22:53:37,421 - INFO - Progreso guardado: progreso_parcial_180_comunas_20251211_225337.csv
+2025-12-11 22:53:37,421 - INFO - Procesando: Parral - Maule
+2025-12-11 22:53:44,292 - INFO - Parral: 8 candidatos - Total: 181
+2025-12-11 22:53:44,293 - INFO - Procesando: Pelarco - Maule
+2025-12-11 22:53:51,018 - INFO - Pelarco: 8 candidatos - Total: 182
+2025-12-11 22:53:51,018 - INFO - Procesando: Pelluhue - Maule
+2025-12-11 22:53:57,800 - INFO - Pelluhue: 8 candidatos - Total: 183
+2025-12-11 22:53:57,801 - INFO - Procesando: Pencahue - Maule
+2025-12-11 22:54:04,882 - INFO - Pencahue: 8 candidatos - Total: 184
+2025-12-11 22:54:04,882 - INFO - Procesando: Rauco - Maule
+2025-12-11 22:54:12,281 - INFO - Rauco: 8 candidatos - Total: 185
+2025-12-11 22:54:12,282 - INFO - Procesando: Retiro - Maule
+2025-12-11 22:54:20,044 - INFO - Retiro: 8 candidatos - Total: 186
+2025-12-11 22:54:20,045 - INFO - Procesando: Rio Claro - Maule
+2025-12-11 22:54:27,653 - INFO - Rio Claro: 8 candidatos - Total: 187
+2025-12-11 22:54:27,653 - INFO - Procesando: Romeral - Maule
+2025-12-11 22:54:35,232 - INFO - Romeral: 8 candidatos - Total: 188
+2025-12-11 22:54:35,233 - INFO - Procesando: Sagrada Familia - Maule
+2025-12-11 22:54:42,858 - INFO - Sagrada Familia: 8 candidatos - Total: 189
+2025-12-11 22:54:42,859 - INFO - Procesando: San Clemente - Maule
+2025-12-11 22:54:50,471 - INFO - San Clemente: 8 candidatos - Total: 190
+2025-12-11 22:54:50,472 - INFO - Creando matriz completa de datos...
+2025-12-11 22:54:50,473 - INFO - Candidatos unicos: 8
+2025-12-11 22:54:50,473 - INFO - Totales unicos: 3
+2025-12-11 22:54:50,499 - INFO - Progreso guardado: progreso_parcial_190_comunas_20251211_225450.csv
+2025-12-11 22:54:50,504 - INFO - Procesando: San Javier - Maule
+2025-12-11 22:54:58,119 - INFO - San Javier: 8 candidatos - Total: 191
+2025-12-11 22:54:58,120 - INFO - Procesando: San Rafael - Maule
+2025-12-11 22:55:05,771 - INFO - San Rafael: 8 candidatos - Total: 192
+2025-12-11 22:55:05,771 - INFO - Procesando: Talca - Maule
+2025-12-11 22:55:13,409 - INFO - Talca: 8 candidatos - Total: 193
+2025-12-11 22:55:13,410 - INFO - Procesando: Teno - Maule
+2025-12-11 22:55:21,190 - INFO - Teno: 8 candidatos - Total: 194
+2025-12-11 22:55:21,191 - INFO - Procesando: Vichuquen - Maule
+2025-12-11 22:55:28,649 - INFO - Vichuquen: 8 candidatos - Total: 195
+2025-12-11 22:55:28,650 - INFO - Procesando: Villa Alegre - Maule
+2025-12-11 22:55:35,731 - INFO - Villa Alegre: 8 candidatos - Total: 196
+2025-12-11 22:55:35,733 - INFO - Procesando: Yerbas Buenas - Maule
+2025-12-11 22:55:43,190 - INFO - Yerbas Buenas: 8 candidatos - Total: 197
+2025-12-11 22:55:43,191 - INFO - 
+============================================================
+2025-12-11 22:55:43,192 - INFO - PROCESANDO REGION: DE ÑUBLE -> Ñuble
+2025-12-11 22:55:43,192 - INFO - ============================================================
+2025-12-11 22:55:49,316 - INFO - Se encontraron 21 comunas en Ñuble
+2025-12-11 22:55:49,317 - INFO - Procesando: Bulnes - Ñuble
+2025-12-11 22:55:56,760 - INFO - Bulnes: 8 candidatos - Total: 198
+2025-12-11 22:55:56,761 - INFO - Procesando: Chillan - Ñuble
+2025-12-11 22:56:04,216 - INFO - Chillan: 8 candidatos - Total: 199
+2025-12-11 22:56:04,217 - INFO - Procesando: Chillan Viejo - Ñuble
+2025-12-11 22:56:11,041 - INFO - Chillan Viejo: 8 candidatos - Total: 200
+2025-12-11 22:56:11,041 - INFO - Creando matriz completa de datos...
+2025-12-11 22:56:11,042 - INFO - Candidatos unicos: 8
+2025-12-11 22:56:11,042 - INFO - Totales unicos: 3
+2025-12-11 22:56:11,049 - INFO - Progreso guardado: progreso_parcial_200_comunas_20251211_225611.csv
+2025-12-11 22:56:11,049 - INFO - Procesando: Cobquecura - Ñuble
+2025-12-11 22:56:17,781 - INFO - Cobquecura: 8 candidatos - Total: 201
+2025-12-11 22:56:17,781 - INFO - Procesando: Coelemu - Ñuble
+2025-12-11 22:56:24,483 - INFO - Coelemu: 8 candidatos - Total: 202
+2025-12-11 22:56:24,483 - INFO - Procesando: Coihueco - Ñuble
+2025-12-11 22:56:31,175 - INFO - Coihueco: 8 candidatos - Total: 203
+2025-12-11 22:56:31,175 - INFO - Procesando: El Carmen - Ñuble
+2025-12-11 22:56:37,851 - INFO - El Carmen: 8 candidatos - Total: 204
+2025-12-11 22:56:37,851 - INFO - Procesando: Ninhue - Ñuble
+2025-12-11 22:56:44,624 - INFO - Ninhue: 8 candidatos - Total: 205
+2025-12-11 22:56:44,624 - INFO - Procesando: ÑIquen - Ñuble
+2025-12-11 22:56:51,419 - INFO - ÑIquen: 8 candidatos - Total: 206
+2025-12-11 22:56:51,419 - INFO - Procesando: Pemuco - Ñuble
+2025-12-11 22:56:58,123 - INFO - Pemuco: 8 candidatos - Total: 207
+2025-12-11 22:56:58,124 - INFO - Procesando: Pinto - Ñuble
+2025-12-11 22:57:04,803 - INFO - Pinto: 8 candidatos - Total: 208
+2025-12-11 22:57:04,803 - INFO - Procesando: Portezuelo - Ñuble
+2025-12-11 22:57:11,487 - INFO - Portezuelo: 8 candidatos - Total: 209
+2025-12-11 22:57:11,488 - INFO - Procesando: Quillon - Ñuble
+2025-12-11 22:57:18,197 - INFO - Quillon: 8 candidatos - Total: 210
+2025-12-11 22:57:18,198 - INFO - Creando matriz completa de datos...
+2025-12-11 22:57:18,198 - INFO - Candidatos unicos: 8
+2025-12-11 22:57:18,198 - INFO - Totales unicos: 3
+2025-12-11 22:57:18,206 - INFO - Progreso guardado: progreso_parcial_210_comunas_20251211_225718.csv
+2025-12-11 22:57:18,206 - INFO - Procesando: Quirihue - Ñuble
+2025-12-11 22:57:24,954 - INFO - Quirihue: 8 candidatos - Total: 211
+2025-12-11 22:57:24,954 - INFO - Procesando: Ranquil - Ñuble
+2025-12-11 22:57:31,820 - INFO - Ranquil: 8 candidatos - Total: 212
+2025-12-11 22:57:31,821 - INFO - Procesando: San Carlos - Ñuble
+2025-12-11 22:57:38,584 - INFO - San Carlos: 8 candidatos - Total: 213
+2025-12-11 22:57:38,585 - INFO - Procesando: San Fabian - Ñuble
+2025-12-11 22:57:45,298 - INFO - San Fabian: 8 candidatos - Total: 214
+2025-12-11 22:57:45,298 - INFO - Procesando: San Ignacio - Ñuble
+2025-12-11 22:57:51,982 - INFO - San Ignacio: 8 candidatos - Total: 215
+2025-12-11 22:57:51,983 - INFO - Procesando: San Nicolas - Ñuble
+2025-12-11 22:57:58,757 - INFO - San Nicolas: 8 candidatos - Total: 216
+2025-12-11 22:57:58,757 - INFO - Procesando: Trehuaco - Ñuble
+2025-12-11 22:58:05,412 - INFO - Trehuaco: 8 candidatos - Total: 217
+2025-12-11 22:58:05,412 - INFO - Procesando: Yungay - Ñuble
+2025-12-11 22:58:12,150 - INFO - Yungay: 8 candidatos - Total: 218
+2025-12-11 22:58:12,151 - INFO - 
+============================================================
+2025-12-11 22:58:12,151 - INFO - PROCESANDO REGION: DEL BIOBIO -> Biobío
+2025-12-11 22:58:12,151 - INFO - ============================================================
+2025-12-11 22:58:18,231 - INFO - Se encontraron 33 comunas en Biobío
+2025-12-11 22:58:18,232 - INFO - Procesando: Alto Biobio - Biobío
+2025-12-11 22:58:24,891 - INFO - Alto Biobio: 8 candidatos - Total: 219
+2025-12-11 22:58:24,891 - INFO - Procesando: Antuco - Biobío
+2025-12-11 22:58:31,638 - INFO - Antuco: 8 candidatos - Total: 220
+2025-12-11 22:58:31,638 - INFO - Creando matriz completa de datos...
+2025-12-11 22:58:31,639 - INFO - Candidatos unicos: 8
+2025-12-11 22:58:31,639 - INFO - Totales unicos: 3
+2025-12-11 22:58:31,646 - INFO - Progreso guardado: progreso_parcial_220_comunas_20251211_225831.csv
+2025-12-11 22:58:31,646 - INFO - Procesando: Arauco - Biobío
+2025-12-11 22:58:38,395 - INFO - Arauco: 8 candidatos - Total: 221
+2025-12-11 22:58:38,396 - INFO - Procesando: Cabrero - Biobío
+2025-12-11 22:58:45,083 - INFO - Cabrero: 8 candidatos - Total: 222
+2025-12-11 22:58:45,084 - INFO - Procesando: Cañete - Biobío
+2025-12-11 22:58:51,808 - INFO - Cañete: 8 candidatos - Total: 223
+2025-12-11 22:58:51,809 - INFO - Procesando: Chiguayante - Biobío
+2025-12-11 22:58:58,515 - INFO - Chiguayante: 8 candidatos - Total: 224
+2025-12-11 22:58:58,516 - INFO - Procesando: Concepcion - Biobío
+2025-12-11 22:59:05,228 - INFO - Concepcion: 8 candidatos - Total: 225
+2025-12-11 22:59:05,229 - INFO - Procesando: Contulmo - Biobío
+2025-12-11 22:59:11,922 - INFO - Contulmo: 8 candidatos - Total: 226
+2025-12-11 22:59:11,923 - INFO - Procesando: Coronel - Biobío
+2025-12-11 22:59:18,586 - INFO - Coronel: 8 candidatos - Total: 227
+2025-12-11 22:59:18,586 - INFO - Procesando: Curanilahue - Biobío
+2025-12-11 22:59:25,259 - INFO - Curanilahue: 8 candidatos - Total: 228
+2025-12-11 22:59:25,259 - INFO - Procesando: Florida - Biobío
+2025-12-11 22:59:31,925 - INFO - Florida: 8 candidatos - Total: 229
+2025-12-11 22:59:31,926 - INFO - Procesando: Hualpen - Biobío
+2025-12-11 22:59:38,655 - INFO - Hualpen: 8 candidatos - Total: 230
+2025-12-11 22:59:38,655 - INFO - Creando matriz completa de datos...
+2025-12-11 22:59:38,655 - INFO - Candidatos unicos: 8
+2025-12-11 22:59:38,655 - INFO - Totales unicos: 3
+2025-12-11 22:59:38,670 - INFO - Progreso guardado: progreso_parcial_230_comunas_20251211_225938.csv
+2025-12-11 22:59:38,670 - INFO - Procesando: Hualqui - Biobío
+2025-12-11 22:59:45,419 - INFO - Hualqui: 8 candidatos - Total: 231
+2025-12-11 22:59:45,419 - INFO - Procesando: Laja - Biobío
+2025-12-11 22:59:52,080 - INFO - Laja: 8 candidatos - Total: 232
+2025-12-11 22:59:52,080 - INFO - Procesando: Lebu - Biobío
+2025-12-11 22:59:58,723 - INFO - Lebu: 8 candidatos - Total: 233
+2025-12-11 22:59:58,723 - INFO - Procesando: los Alamos - Biobío
+2025-12-11 23:00:05,374 - INFO - los Alamos: 8 candidatos - Total: 234
+2025-12-11 23:00:05,376 - INFO - Procesando: los Angeles - Biobío
+2025-12-11 23:00:12,049 - INFO - los Angeles: 8 candidatos - Total: 235
+2025-12-11 23:00:12,049 - INFO - Procesando: Lota - Biobío
+2025-12-11 23:00:18,706 - INFO - Lota: 8 candidatos - Total: 236
+2025-12-11 23:00:18,706 - INFO - Procesando: Mulchen - Biobío
+2025-12-11 23:00:25,385 - INFO - Mulchen: 8 candidatos - Total: 237
+2025-12-11 23:00:25,385 - INFO - Procesando: Nacimiento - Biobío
+2025-12-11 23:00:32,052 - INFO - Nacimiento: 8 candidatos - Total: 238
+2025-12-11 23:00:32,052 - INFO - Procesando: Negrete - Biobío
+2025-12-11 23:00:38,709 - INFO - Negrete: 8 candidatos - Total: 239
+2025-12-11 23:00:38,709 - INFO - Procesando: Penco - Biobío
+2025-12-11 23:00:45,361 - INFO - Penco: 8 candidatos - Total: 240
+2025-12-11 23:00:45,361 - INFO - Creando matriz completa de datos...
+2025-12-11 23:00:45,361 - INFO - Candidatos unicos: 8
+2025-12-11 23:00:45,361 - INFO - Totales unicos: 3
+2025-12-11 23:00:45,367 - INFO - Progreso guardado: progreso_parcial_240_comunas_20251211_230045.csv
+2025-12-11 23:00:45,367 - INFO - Procesando: Quilaco - Biobío
+2025-12-11 23:00:52,027 - INFO - Quilaco: 8 candidatos - Total: 241
+2025-12-11 23:00:52,028 - INFO - Procesando: Quilleco - Biobío
+2025-12-11 23:00:58,776 - INFO - Quilleco: 8 candidatos - Total: 242
+2025-12-11 23:00:58,777 - INFO - Procesando: San Pedro de la Paz - Biobío
+2025-12-11 23:01:05,479 - INFO - San Pedro de la Paz: 8 candidatos - Total: 243
+2025-12-11 23:01:05,479 - INFO - Procesando: San Rosendo - Biobío
+2025-12-11 23:01:12,160 - INFO - San Rosendo: 8 candidatos - Total: 244
+2025-12-11 23:01:12,161 - INFO - Procesando: Santa Barbara - Biobío
+2025-12-11 23:01:18,816 - INFO - Santa Barbara: 8 candidatos - Total: 245
+2025-12-11 23:01:18,816 - INFO - Procesando: Santa Juana - Biobío
+2025-12-11 23:01:25,455 - INFO - Santa Juana: 8 candidatos - Total: 246
+2025-12-11 23:01:25,456 - INFO - Procesando: Talcahuano - Biobío
+2025-12-11 23:01:32,191 - INFO - Talcahuano: 8 candidatos - Total: 247
+2025-12-11 23:01:32,192 - INFO - Procesando: Tirua - Biobío
+2025-12-11 23:01:38,895 - INFO - Tirua: 8 candidatos - Total: 248
+2025-12-11 23:01:38,896 - INFO - Procesando: Tome - Biobío
+2025-12-11 23:01:45,516 - INFO - Tome: 8 candidatos - Total: 249
+2025-12-11 23:01:45,516 - INFO - Procesando: Tucapel - Biobío
+2025-12-11 23:01:52,168 - INFO - Tucapel: 8 candidatos - Total: 250
+2025-12-11 23:01:52,168 - INFO - Creando matriz completa de datos...
+2025-12-11 23:01:52,168 - INFO - Candidatos unicos: 8
+2025-12-11 23:01:52,170 - INFO - Totales unicos: 3
+2025-12-11 23:01:52,178 - INFO - Progreso guardado: progreso_parcial_250_comunas_20251211_230152.csv
+2025-12-11 23:01:52,179 - INFO - Procesando: Yumbel - Biobío
+2025-12-11 23:01:58,832 - INFO - Yumbel: 8 candidatos - Total: 251
+2025-12-11 23:01:58,832 - INFO - 
+============================================================
+2025-12-11 23:01:58,832 - INFO - PROCESANDO REGION: DE LA ARAUCANIA -> La Araucanía
+2025-12-11 23:01:58,832 - INFO - ============================================================
+2025-12-11 23:02:04,873 - INFO - Se encontraron 32 comunas en La Araucanía
+2025-12-11 23:02:04,873 - INFO - Procesando: Angol - La Araucanía
+2025-12-11 23:02:11,501 - INFO - Angol: 8 candidatos - Total: 252
+2025-12-11 23:02:11,501 - INFO - Procesando: Carahue - La Araucanía
+2025-12-11 23:02:18,136 - INFO - Carahue: 8 candidatos - Total: 253
+2025-12-11 23:02:18,136 - INFO - Procesando: Cholchol - La Araucanía
+2025-12-11 23:02:24,771 - INFO - Cholchol: 8 candidatos - Total: 254
+2025-12-11 23:02:24,772 - INFO - Procesando: Collipulli - La Araucanía
+2025-12-11 23:02:31,361 - INFO - Collipulli: 8 candidatos - Total: 255
+2025-12-11 23:02:31,361 - INFO - Procesando: Cunco - La Araucanía
+2025-12-11 23:02:37,930 - INFO - Cunco: 8 candidatos - Total: 256
+2025-12-11 23:02:37,931 - INFO - Procesando: Curacautin - La Araucanía
+2025-12-11 23:02:44,537 - INFO - Curacautin: 8 candidatos - Total: 257
+2025-12-11 23:02:44,537 - INFO - Procesando: Curarrehue - La Araucanía
+2025-12-11 23:02:51,132 - INFO - Curarrehue: 8 candidatos - Total: 258
+2025-12-11 23:02:51,132 - INFO - Procesando: Ercilla - La Araucanía
+2025-12-11 23:02:57,750 - INFO - Ercilla: 8 candidatos - Total: 259
+2025-12-11 23:02:57,751 - INFO - Procesando: Freire - La Araucanía
+2025-12-11 23:03:04,378 - INFO - Freire: 8 candidatos - Total: 260
+2025-12-11 23:03:04,378 - INFO - Creando matriz completa de datos...
+2025-12-11 23:03:04,378 - INFO - Candidatos unicos: 8
+2025-12-11 23:03:04,379 - INFO - Totales unicos: 3
+2025-12-11 23:03:04,388 - INFO - Progreso guardado: progreso_parcial_260_comunas_20251211_230304.csv
+2025-12-11 23:03:04,388 - INFO - Procesando: Galvarino - La Araucanía
+2025-12-11 23:03:11,047 - INFO - Galvarino: 8 candidatos - Total: 261
+2025-12-11 23:03:11,047 - INFO - Procesando: Gorbea - La Araucanía
+2025-12-11 23:03:17,646 - INFO - Gorbea: 8 candidatos - Total: 262
+2025-12-11 23:03:17,646 - INFO - Procesando: Lautaro - La Araucanía
+2025-12-11 23:03:24,231 - INFO - Lautaro: 8 candidatos - Total: 263
+2025-12-11 23:03:24,232 - INFO - Procesando: Loncoche - La Araucanía
+2025-12-11 23:03:30,825 - INFO - Loncoche: 8 candidatos - Total: 264
+2025-12-11 23:03:30,825 - INFO - Procesando: Lonquimay - La Araucanía
+2025-12-11 23:03:37,398 - INFO - Lonquimay: 8 candidatos - Total: 265
+2025-12-11 23:03:37,400 - INFO - Procesando: los Sauces - La Araucanía
+2025-12-11 23:03:44,010 - INFO - los Sauces: 8 candidatos - Total: 266
+2025-12-11 23:03:44,011 - INFO - Procesando: Lumaco - La Araucanía
+2025-12-11 23:03:50,583 - INFO - Lumaco: 8 candidatos - Total: 267
+2025-12-11 23:03:50,584 - INFO - Procesando: Melipeuco - La Araucanía
+2025-12-11 23:03:57,210 - INFO - Melipeuco: 8 candidatos - Total: 268
+2025-12-11 23:03:57,211 - INFO - Procesando: Nueva Imperial - La Araucanía
+2025-12-11 23:04:05,068 - INFO - Nueva Imperial: 8 candidatos - Total: 269
+2025-12-11 23:04:05,069 - INFO - Procesando: Padre las Casas - La Araucanía
+2025-12-11 23:04:12,392 - INFO - Padre las Casas: 8 candidatos - Total: 270
+2025-12-11 23:04:12,393 - INFO - Creando matriz completa de datos...
+2025-12-11 23:04:12,394 - INFO - Candidatos unicos: 8
+2025-12-11 23:04:12,394 - INFO - Totales unicos: 3
+2025-12-11 23:04:12,414 - INFO - Progreso guardado: progreso_parcial_270_comunas_20251211_230412.csv
+2025-12-11 23:04:12,415 - INFO - Procesando: Perquenco - La Araucanía
+2025-12-11 23:04:19,283 - INFO - Perquenco: 8 candidatos - Total: 271
+2025-12-11 23:04:19,284 - INFO - Procesando: Pitrufquen - La Araucanía
+2025-12-11 23:04:26,116 - INFO - Pitrufquen: 8 candidatos - Total: 272
+2025-12-11 23:04:26,116 - INFO - Procesando: Pucon - La Araucanía
+2025-12-11 23:04:32,932 - INFO - Pucon: 8 candidatos - Total: 273
+2025-12-11 23:04:32,933 - INFO - Procesando: Puren - La Araucanía
+2025-12-11 23:04:39,807 - INFO - Puren: 8 candidatos - Total: 274
+2025-12-11 23:04:39,808 - INFO - Procesando: Renaico - La Araucanía
+2025-12-11 23:04:46,610 - INFO - Renaico: 8 candidatos - Total: 275
+2025-12-11 23:04:46,611 - INFO - Procesando: Saavedra - La Araucanía
+2025-12-11 23:04:53,422 - INFO - Saavedra: 8 candidatos - Total: 276
+2025-12-11 23:04:53,422 - INFO - Procesando: Temuco - La Araucanía
+2025-12-11 23:05:00,259 - INFO - Temuco: 8 candidatos - Total: 277
+2025-12-11 23:05:00,259 - INFO - Procesando: Teodoro Schmidt - La Araucanía
+2025-12-11 23:05:07,085 - INFO - Teodoro Schmidt: 8 candidatos - Total: 278
+2025-12-11 23:05:07,085 - INFO - Procesando: Tolten - La Araucanía
+2025-12-11 23:05:13,901 - INFO - Tolten: 8 candidatos - Total: 279
+2025-12-11 23:05:13,902 - INFO - Procesando: Traiguen - La Araucanía
+2025-12-11 23:05:20,738 - INFO - Traiguen: 8 candidatos - Total: 280
+2025-12-11 23:05:20,739 - INFO - Creando matriz completa de datos...
+2025-12-11 23:05:20,739 - INFO - Candidatos unicos: 8
+2025-12-11 23:05:20,740 - INFO - Totales unicos: 3
+2025-12-11 23:05:20,757 - INFO - Progreso guardado: progreso_parcial_280_comunas_20251211_230520.csv
+2025-12-11 23:05:20,759 - INFO - Procesando: Victoria - La Araucanía
+2025-12-11 23:05:27,538 - INFO - Victoria: 8 candidatos - Total: 281
+2025-12-11 23:05:27,538 - INFO - Procesando: Vilcun - La Araucanía
+2025-12-11 23:05:34,324 - INFO - Vilcun: 8 candidatos - Total: 282
+2025-12-11 23:05:34,324 - INFO - Procesando: Villarrica - La Araucanía
+2025-12-11 23:05:41,124 - INFO - Villarrica: 8 candidatos - Total: 283
+2025-12-11 23:05:41,125 - INFO - 
+============================================================
+2025-12-11 23:05:41,125 - INFO - PROCESANDO REGION: DE LOS RIOS -> Los Ríos
+2025-12-11 23:05:41,126 - INFO - ============================================================
+2025-12-11 23:05:46,769 - INFO - Se encontraron 12 comunas en Los Ríos
+2025-12-11 23:05:46,770 - INFO - Procesando: Corral - Los Ríos
+2025-12-11 23:05:53,583 - INFO - Corral: 8 candidatos - Total: 284
+2025-12-11 23:05:53,583 - INFO - Procesando: Futrono - Los Ríos
+2025-12-11 23:06:00,408 - INFO - Futrono: 8 candidatos - Total: 285
+2025-12-11 23:06:00,408 - INFO - Procesando: la Union - Los Ríos
+2025-12-11 23:06:07,230 - INFO - la Union: 8 candidatos - Total: 286
+2025-12-11 23:06:07,231 - INFO - Procesando: Lago Ranco - Los Ríos
+2025-12-11 23:06:14,034 - INFO - Lago Ranco: 8 candidatos - Total: 287
+2025-12-11 23:06:14,035 - INFO - Procesando: Lanco - Los Ríos
+2025-12-11 23:06:20,799 - INFO - Lanco: 8 candidatos - Total: 288
+2025-12-11 23:06:20,799 - INFO - Procesando: los Lagos - Los Ríos
+2025-12-11 23:06:27,617 - INFO - los Lagos: 8 candidatos - Total: 289
+2025-12-11 23:06:27,617 - INFO - Procesando: Mafil - Los Ríos
+2025-12-11 23:06:34,409 - INFO - Mafil: 8 candidatos - Total: 290
+2025-12-11 23:06:34,409 - INFO - Creando matriz completa de datos...
+2025-12-11 23:06:34,410 - INFO - Candidatos unicos: 8
+2025-12-11 23:06:34,410 - INFO - Totales unicos: 3
+2025-12-11 23:06:34,427 - INFO - Progreso guardado: progreso_parcial_290_comunas_20251211_230634.csv
+2025-12-11 23:06:34,428 - INFO - Procesando: Mariquina - Los Ríos
+2025-12-11 23:06:41,219 - INFO - Mariquina: 8 candidatos - Total: 291
+2025-12-11 23:06:41,220 - INFO - Procesando: Paillaco - Los Ríos
+2025-12-11 23:06:47,892 - INFO - Paillaco: 8 candidatos - Total: 292
+2025-12-11 23:06:47,892 - INFO - Procesando: Panguipulli - Los Ríos
+2025-12-11 23:06:54,609 - INFO - Panguipulli: 8 candidatos - Total: 293
+2025-12-11 23:06:54,609 - INFO - Procesando: Rio Bueno - Los Ríos
+2025-12-11 23:07:01,286 - INFO - Rio Bueno: 8 candidatos - Total: 294
+2025-12-11 23:07:01,287 - INFO - Procesando: Valdivia - Los Ríos
+2025-12-11 23:07:08,045 - INFO - Valdivia: 8 candidatos - Total: 295
+2025-12-11 23:07:08,046 - INFO - 
+============================================================
+2025-12-11 23:07:08,046 - INFO - PROCESANDO REGION: DE LOS LAGOS -> Los Lagos
+2025-12-11 23:07:08,046 - INFO - ============================================================
+2025-12-11 23:07:14,290 - INFO - Se encontraron 30 comunas en Los Lagos
+2025-12-11 23:07:14,290 - INFO - Procesando: Ancud - Los Lagos
+2025-12-11 23:07:20,980 - INFO - Ancud: 8 candidatos - Total: 296
+2025-12-11 23:07:20,980 - INFO - Procesando: Calbuco - Los Lagos
+2025-12-11 23:07:27,633 - INFO - Calbuco: 8 candidatos - Total: 297
+2025-12-11 23:07:27,633 - INFO - Procesando: Castro - Los Lagos
+2025-12-11 23:07:34,399 - INFO - Castro: 8 candidatos - Total: 298
+2025-12-11 23:07:34,399 - INFO - Procesando: Chaiten - Los Lagos
+2025-12-11 23:07:41,318 - INFO - Chaiten: 8 candidatos - Total: 299
+2025-12-11 23:07:41,319 - INFO - Procesando: Chonchi - Los Lagos
+2025-12-11 23:07:49,925 - INFO - Chonchi: 8 candidatos - Total: 300
+2025-12-11 23:07:49,926 - INFO - Creando matriz completa de datos...
+2025-12-11 23:07:49,931 - INFO - Candidatos unicos: 8
+2025-12-11 23:07:49,932 - INFO - Totales unicos: 3
+2025-12-11 23:07:49,975 - INFO - Progreso guardado: progreso_parcial_300_comunas_20251211_230749.csv
+2025-12-11 23:07:49,976 - INFO - Procesando: Cochamo - Los Lagos
+2025-12-11 23:07:58,352 - INFO - Cochamo: 8 candidatos - Total: 301
+2025-12-11 23:07:58,354 - INFO - Procesando: Curaco de Velez - Los Lagos
+2025-12-11 23:08:07,036 - INFO - Curaco de Velez: 8 candidatos - Total: 302
+2025-12-11 23:08:07,037 - INFO - Procesando: Dalcahue - Los Lagos
+2025-12-11 23:08:16,183 - INFO - Dalcahue: 8 candidatos - Total: 303
+2025-12-11 23:08:16,186 - INFO - Procesando: Fresia - Los Lagos
+2025-12-11 23:08:24,722 - INFO - Fresia: 8 candidatos - Total: 304
+2025-12-11 23:08:24,722 - INFO - Procesando: Frutillar - Los Lagos
+2025-12-11 23:08:33,195 - INFO - Frutillar: 8 candidatos - Total: 305
+2025-12-11 23:08:33,198 - INFO - Procesando: Futaleufu - Los Lagos
+2025-12-11 23:08:40,194 - INFO - Futaleufu: 8 candidatos - Total: 306
+2025-12-11 23:08:40,195 - INFO - Procesando: Hualaihue - Los Lagos
+2025-12-11 23:08:46,971 - INFO - Hualaihue: 8 candidatos - Total: 307
+2025-12-11 23:08:46,971 - INFO - Procesando: Llanquihue - Los Lagos
+2025-12-11 23:08:53,648 - INFO - Llanquihue: 8 candidatos - Total: 308
+2025-12-11 23:08:53,648 - INFO - Procesando: los Muermos - Los Lagos
+2025-12-11 23:09:00,411 - INFO - los Muermos: 8 candidatos - Total: 309
+2025-12-11 23:09:00,412 - INFO - Procesando: Maullin - Los Lagos
+2025-12-11 23:09:07,133 - INFO - Maullin: 8 candidatos - Total: 310
+2025-12-11 23:09:07,134 - INFO - Creando matriz completa de datos...
+2025-12-11 23:09:07,134 - INFO - Candidatos unicos: 8
+2025-12-11 23:09:07,134 - INFO - Totales unicos: 3
+2025-12-11 23:09:07,143 - INFO - Progreso guardado: progreso_parcial_310_comunas_20251211_230907.csv
+2025-12-11 23:09:07,143 - INFO - Procesando: Osorno - Los Lagos
+2025-12-11 23:09:13,922 - INFO - Osorno: 8 candidatos - Total: 311
+2025-12-11 23:09:13,923 - INFO - Procesando: Palena - Los Lagos
+2025-12-11 23:09:20,663 - INFO - Palena: 8 candidatos - Total: 312
+2025-12-11 23:09:20,664 - INFO - Procesando: Puerto Montt - Los Lagos
+2025-12-11 23:09:27,348 - INFO - Puerto Montt: 8 candidatos - Total: 313
+2025-12-11 23:09:27,348 - INFO - Procesando: Puerto Octay - Los Lagos
+2025-12-11 23:09:34,042 - INFO - Puerto Octay: 8 candidatos - Total: 314
+2025-12-11 23:09:34,043 - INFO - Procesando: Puerto Varas - Los Lagos
+2025-12-11 23:09:40,843 - INFO - Puerto Varas: 8 candidatos - Total: 315
+2025-12-11 23:09:40,844 - INFO - Procesando: Puqueldon - Los Lagos
+2025-12-11 23:09:47,547 - INFO - Puqueldon: 8 candidatos - Total: 316
+2025-12-11 23:09:47,548 - INFO - Procesando: Purranque - Los Lagos
+2025-12-11 23:09:54,303 - INFO - Purranque: 8 candidatos - Total: 317
+2025-12-11 23:09:54,303 - INFO - Procesando: Puyehue - Los Lagos
+2025-12-11 23:10:01,063 - INFO - Puyehue: 8 candidatos - Total: 318
+2025-12-11 23:10:01,063 - INFO - Procesando: Queilen - Los Lagos
+2025-12-11 23:10:07,805 - INFO - Queilen: 8 candidatos - Total: 319
+2025-12-11 23:10:07,805 - INFO - Procesando: Quellon - Los Lagos
+2025-12-11 23:10:14,576 - INFO - Quellon: 8 candidatos - Total: 320
+2025-12-11 23:10:14,577 - INFO - Creando matriz completa de datos...
+2025-12-11 23:10:14,577 - INFO - Candidatos unicos: 8
+2025-12-11 23:10:14,577 - INFO - Totales unicos: 3
+2025-12-11 23:10:14,584 - INFO - Progreso guardado: progreso_parcial_320_comunas_20251211_231014.csv
+2025-12-11 23:10:14,585 - INFO - Procesando: Quemchi - Los Lagos
+2025-12-11 23:10:21,276 - INFO - Quemchi: 8 candidatos - Total: 321
+2025-12-11 23:10:21,276 - INFO - Procesando: Quinchao - Los Lagos
+2025-12-11 23:10:27,963 - INFO - Quinchao: 8 candidatos - Total: 322
+2025-12-11 23:10:27,964 - INFO - Procesando: Rio Negro - Los Lagos
+2025-12-11 23:10:34,694 - INFO - Rio Negro: 8 candidatos - Total: 323
+2025-12-11 23:10:34,694 - INFO - Procesando: San Juan de la Costa - Los Lagos
+2025-12-11 23:10:41,471 - INFO - San Juan de la Costa: 8 candidatos - Total: 324
+2025-12-11 23:10:41,471 - INFO - Procesando: San Pablo - Los Lagos
+2025-12-11 23:10:48,219 - INFO - San Pablo: 8 candidatos - Total: 325
+2025-12-11 23:10:48,219 - INFO - 
+============================================================
+2025-12-11 23:10:48,219 - INFO - PROCESANDO REGION: DE AYSEN DEL GENERAL CARLOS IBAÑEZ DEL CAMPO -> Aysén
+2025-12-11 23:10:48,220 - INFO - ============================================================
+2025-12-11 23:10:53,683 - INFO - Se encontraron 10 comunas en Aysén
+2025-12-11 23:10:53,684 - INFO - Procesando: Aysen - Aysén
+2025-12-11 23:11:00,389 - INFO - Aysen: 8 candidatos - Total: 326
+2025-12-11 23:11:00,389 - INFO - Procesando: Chile Chico - Aysén
+2025-12-11 23:11:07,090 - INFO - Chile Chico: 8 candidatos - Total: 327
+2025-12-11 23:11:07,092 - INFO - Procesando: Cisnes - Aysén
+2025-12-11 23:11:13,810 - INFO - Cisnes: 8 candidatos - Total: 328
+2025-12-11 23:11:13,811 - INFO - Procesando: Cochrane - Aysén
+2025-12-11 23:11:20,541 - INFO - Cochrane: 8 candidatos - Total: 329
+2025-12-11 23:11:20,542 - INFO - Procesando: Coyhaique - Aysén
+2025-12-11 23:11:27,270 - INFO - Coyhaique: 8 candidatos - Total: 330
+2025-12-11 23:11:27,271 - INFO - Creando matriz completa de datos...
+2025-12-11 23:11:27,271 - INFO - Candidatos unicos: 8
+2025-12-11 23:11:27,271 - INFO - Totales unicos: 3
+2025-12-11 23:11:27,279 - INFO - Progreso guardado: progreso_parcial_330_comunas_20251211_231127.csv
+2025-12-11 23:11:27,279 - INFO - Procesando: Guaitecas - Aysén
+2025-12-11 23:11:33,982 - INFO - Guaitecas: 8 candidatos - Total: 331
+2025-12-11 23:11:33,983 - INFO - Procesando: Lago Verde - Aysén
+2025-12-11 23:11:40,688 - INFO - Lago Verde: 8 candidatos - Total: 332
+2025-12-11 23:11:40,688 - INFO - Procesando: O'higgins - Aysén
+2025-12-11 23:11:47,383 - INFO - O'higgins: 8 candidatos - Total: 333
+2025-12-11 23:11:47,384 - INFO - Procesando: Rio Ibañez - Aysén
+2025-12-11 23:11:54,073 - INFO - Rio Ibañez: 8 candidatos - Total: 334
+2025-12-11 23:11:54,074 - INFO - Procesando: Tortel - Aysén
+2025-12-11 23:12:00,738 - INFO - Tortel: 8 candidatos - Total: 335
+2025-12-11 23:12:00,738 - INFO - 
+============================================================
+2025-12-11 23:12:00,739 - INFO - PROCESANDO REGION: DE MAGALLANES Y DE LA ANTARTICA CHILENA -> Magallanes
+2025-12-11 23:12:00,739 - INFO - ============================================================
+2025-12-11 23:12:06,232 - INFO - Se encontraron 11 comunas en Magallanes
+2025-12-11 23:12:06,232 - INFO - Procesando: Antartica - Magallanes
+2025-12-11 23:12:13,072 - INFO - Antartica: 8 candidatos - Total: 336
+2025-12-11 23:12:13,074 - INFO - Procesando: Cabo de Hornos(ex-navarino) - Magallanes
+2025-12-11 23:12:20,429 - INFO - Cabo de Hornos(ex-navarino): 8 candidatos - Total: 337
+2025-12-11 23:12:20,429 - INFO - Procesando: Laguna Blanca - Magallanes
+2025-12-11 23:12:27,471 - INFO - Laguna Blanca: 8 candidatos - Total: 338
+2025-12-11 23:12:27,472 - INFO - Procesando: Natales - Magallanes
+2025-12-11 23:12:34,195 - INFO - Natales: 8 candidatos - Total: 339
+2025-12-11 23:12:34,196 - INFO - Procesando: Porvenir - Magallanes
+2025-12-11 23:12:40,943 - INFO - Porvenir: 8 candidatos - Total: 340
+2025-12-11 23:12:40,943 - INFO - Creando matriz completa de datos...
+2025-12-11 23:12:40,944 - INFO - Candidatos unicos: 8
+2025-12-11 23:12:40,944 - INFO - Totales unicos: 3
+2025-12-11 23:12:40,954 - INFO - Progreso guardado: progreso_parcial_340_comunas_20251211_231240.csv
+2025-12-11 23:12:40,955 - INFO - Procesando: Primavera - Magallanes
+2025-12-11 23:12:47,719 - INFO - Primavera: 8 candidatos - Total: 341
+2025-12-11 23:12:47,719 - INFO - Procesando: Punta Arenas - Magallanes
+2025-12-11 23:12:54,479 - INFO - Punta Arenas: 8 candidatos - Total: 342
+2025-12-11 23:12:54,480 - INFO - Procesando: Rio Verde - Magallanes
+2025-12-11 23:13:01,240 - INFO - Rio Verde: 8 candidatos - Total: 343
+2025-12-11 23:13:01,240 - INFO - Procesando: San Gregorio - Magallanes
+2025-12-11 23:13:07,999 - INFO - San Gregorio: 8 candidatos - Total: 344
+2025-12-11 23:13:07,999 - INFO - Procesando: Timaukel - Magallanes
+2025-12-11 23:13:14,750 - INFO - Timaukel: 8 candidatos - Total: 345
+2025-12-11 23:13:14,751 - INFO - Procesando: Torres del Paine - Magallanes
+2025-12-11 23:13:21,499 - INFO - Torres del Paine: 8 candidatos - Total: 346
+2025-12-11 23:13:21,500 - INFO - Creando matriz completa de datos...
+2025-12-11 23:13:21,500 - INFO - Candidatos unicos: 8
+2025-12-11 23:13:21,501 - INFO - Totales unicos: 3
+2025-12-11 23:13:21,507 - INFO - CSV guardado: matriz_primera_vuelta_presidencial_2025_346_comunas_20251211_231321.csv
+2025-12-11 23:13:22,065 - INFO - Excel guardado: matriz_primera_vuelta_presidencial_2025_346_comunas_20251211_231321.xlsx
+2025-12-11 23:13:22,069 - INFO - Metadatos guardados: matriz_primera_vuelta_presidencial_2025_346_comunas_20251211_231321_METADATOS.txt
+2025-12-11 23:13:22,069 - INFO - 
+================================================================================
+2025-12-11 23:13:22,070 - INFO - EXTRACCION COMPLETADA
+2025-12-11 23:13:22,070 - INFO - ================================================================================
+2025-12-11 23:13:22,070 - INFO - Comunas procesadas exitosamente: 346
+2025-12-11 23:13:22,070 - INFO - Comunas con error: 0
+2025-12-11 23:13:22,070 - INFO - Total de comunas en el dataset: 346
+2025-12-11 23:13:22,071 - INFO - Regiones procesadas: 16
+2025-12-11 23:13:22,071 - INFO - Candidatos en el dataset: 8
+2025-12-11 23:13:22,071 - INFO - Metricas de totales: 3
+2025-12-11 23:13:22,072 - INFO - Columnas totales: 24
+2025-12-11 23:13:22,072 - INFO - 
+Distribucion por region:
+2025-12-11 23:13:22,079 - INFO -   Antofagasta: 9 comunas
+2025-12-11 23:13:22,079 - INFO -   Arica y Parinacota: 4 comunas
+2025-12-11 23:13:22,079 - INFO -   Atacama: 9 comunas
+2025-12-11 23:13:22,080 - INFO -   Aysén: 10 comunas
+2025-12-11 23:13:22,080 - INFO -   Biobío: 33 comunas
+2025-12-11 23:13:22,080 - INFO -   Coquimbo: 15 comunas
+2025-12-11 23:13:22,080 - INFO -   La Araucanía: 32 comunas
+2025-12-11 23:13:22,080 - INFO -   Libertador: 33 comunas
+2025-12-11 23:13:22,081 - INFO -   Los Lagos: 30 comunas
+2025-12-11 23:13:22,081 - INFO -   Los Ríos: 12 comunas
+2025-12-11 23:13:22,081 - INFO -   Magallanes: 11 comunas
+2025-12-11 23:13:22,081 - INFO -   Maule: 30 comunas
+2025-12-11 23:13:22,081 - INFO -   Metropolitana: 52 comunas
+2025-12-11 23:13:22,081 - INFO -   Tarapacá: 7 comunas
+2025-12-11 23:13:22,081 - INFO -   Valparaíso: 38 comunas
+2025-12-11 23:13:22,081 - INFO -   Ñuble: 21 comunas
+2025-12-11 23:13:22,082 - INFO - Tiempo total de ejecucion: 41.77 minutos
+2025-12-11 23:13:24,751 - INFO - Navegador cerrado
