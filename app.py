@@ -186,17 +186,26 @@ def detect_election_from_filename(filename, config):
     
     filename_lower = filename.lower()
     
+    # Prioridad 1: Buscar específicamente por "segunda" (más específico primero)
+    if 'segunda' in filename_lower or '2v' in filename_lower or '2da' in filename_lower:
+        for key, eleccion in config.get('elecciones', {}).items():
+            if 'segunda' in key.lower() or '2v' in key.lower():
+                return key, eleccion
+    
+    # Prioridad 2: Buscar específicamente por "primera"
+    if 'primera' in filename_lower or '1v' in filename_lower or '1ra' in filename_lower:
+        for key, eleccion in config.get('elecciones', {}).items():
+            if 'primera' in key.lower() or '1v' in key.lower():
+                return key, eleccion
+    
+    # Prioridad 3: Buscar por palabras del nombre de la elección
     for key, eleccion in config.get('elecciones', {}).items():
         nombre_lower = eleccion.get('nombre', '').lower()
-        if any(palabra in filename_lower for palabra in nombre_lower.split()):
+        # Contar cuántas palabras del nombre coinciden
+        palabras_coincidentes = sum(1 for palabra in nombre_lower.split() if palabra in filename_lower)
+        # Si al menos 2 palabras coinciden, es probable que sea esta elección
+        if palabras_coincidentes >= 2:
             return key, eleccion
-        
-        if 'primera' in filename_lower or '1v' in filename_lower or '1ra' in filename_lower:
-            if 'primera' in key or '1v' in key:
-                return key, eleccion
-        if 'segunda' in filename_lower or '2v' in filename_lower or '2da' in filename_lower:
-            if 'segunda' in key or '2v' in key:
-                return key, eleccion
     
     return None
 
