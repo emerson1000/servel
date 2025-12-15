@@ -1,0 +1,28 @@
+METADATOS - MATRIZ ELECTORAL CHILE
+==================================================
+
+Elección: Segunda Vuelta Presidencial 2025
+Archivo de datos: matriz_segunda_vuelta_presidencial_2025_346_comunas_20251214_205740.csv
+Fecha generación: 2025-12-14 20:57:42
+Total comunas: 346
+Total regiones: 16
+
+ESTRUCTURA DE COLUMNAS:
+------------------------------
+comuna: Nombre de la comuna (texto)
+region: Nombre de la región (texto)
+jara_votos: Número de votos (entero)
+jara_pct: Porcentaje de votos (decimal)
+kast_votos: Número de votos (entero)
+kast_pct: Porcentaje de votos (decimal)
+blanco_votos: Número de votos (entero)
+blanco_pct: Porcentaje de votos (decimal)
+emitidos_votos: Número de votos (entero)
+emitidos_pct: Porcentaje de votos (decimal)
+nulo_votos: Número de votos (entero)
+nulo_pct: Porcentaje de votos (decimal)
+
+DICCIONARIO DE CANDIDATOS:
+------------------------------
+JEANNETTE JARA ROMAN -> jara
+JOSE ANTONIO KAST RIST -> kast

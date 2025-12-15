@@ -272,6 +272,11 @@ if not candidates:
     st.error("No se pudieron detectar candidatos en el archivo.")
     st.stop()
 
+# Detectar si es primera o segunda vuelta
+es_segunda_vuelta = False
+if eleccion_info and 'vuelta' in eleccion_info:
+    es_segunda_vuelta = eleccion_info['vuelta'] == 2
+
 # --- CONTENIDO PRINCIPAL ---
 
 # Header con información de la elección
@@ -301,7 +306,11 @@ sorted_results = dict(sorted(national_results.items(), key=lambda item: item[1],
 st.markdown("## 📊 Resultados Nacionales")
 
 # Mostrar todos los candidatos en KPIs
-num_cols = min(len(candidates), 4)
+# Para segunda vuelta: 2 columnas, para primera vuelta: hasta 4 columnas
+if es_segunda_vuelta:
+    num_cols = min(len(candidates), 2)
+else:
+    num_cols = min(len(candidates), 4)
 kpi_cols = st.columns(num_cols)
 
 for idx, (cand, votes) in enumerate(sorted_results.items()):
@@ -333,6 +342,12 @@ with col_chart1:
     
     chart_data['Porcentaje_Texto'] = chart_data['Porcentaje'].apply(lambda x: f'{x:.1f}%')
     
+    # Colores: 2 para segunda vuelta, 8 para primera vuelta
+    if es_segunda_vuelta:
+        color_sequence = ['#42a5f5', '#ff9800']  # Azul y naranja para 2 candidatos
+    else:
+        color_sequence = ['#42a5f5', '#ff9800', '#00bcd4', '#ff5722', '#9c27b0', '#4caf50', '#f44336', '#ffc107']
+    
     fig_bar = px.bar(
         chart_data, 
         x='Votos', 
@@ -342,7 +357,7 @@ with col_chart1:
         text='Porcentaje_Texto',
         title="",
         labels={'Votos': 'Número de Votos', 'Candidato': ''},
-        color_discrete_sequence=['#42a5f5', '#ff9800', '#00bcd4', '#ff5722', '#9c27b0', '#4caf50', '#f44336', '#ffc107']
+        color_discrete_sequence=color_sequence
     )
     fig_bar.update_layout(
         showlegend=False, 
@@ -370,12 +385,18 @@ with col_chart1:
 
 with col_chart2:
     st.markdown("### 🥧 Distribución Porcentual")
+    # Colores: 2 para segunda vuelta, 8 para primera vuelta
+    if es_segunda_vuelta:
+        color_sequence = ['#42a5f5', '#ff9800']  # Azul y naranja para 2 candidatos
+    else:
+        color_sequence = ['#42a5f5', '#ff9800', '#00bcd4', '#ff5722', '#9c27b0', '#4caf50', '#f44336', '#ffc107']
+    
     fig_pie = px.pie(
         chart_data,
         values='Votos',
         names='Candidato',
         title="",
-        color_discrete_sequence=['#42a5f5', '#ff9800', '#00bcd4', '#ff5722', '#9c27b0', '#4caf50', '#f44336', '#ffc107'],
+        color_discrete_sequence=color_sequence,
         hole=0.4
     )
     fig_pie.update_layout(
@@ -560,6 +581,12 @@ for _, row in region_summary.iterrows():
 if region_chart_data:
     region_df = pd.DataFrame(region_chart_data)
     
+    # Colores: 2 para segunda vuelta, 8 para primera vuelta
+    if es_segunda_vuelta:
+        color_sequence = ['#42a5f5', '#ff9800']  # Azul y naranja para 2 candidatos
+    else:
+        color_sequence = ['#42a5f5', '#ff9800', '#00bcd4', '#ff5722', '#9c27b0', '#4caf50', '#f44336', '#ffc107']
+    
     fig_region = px.bar(
         region_df,
         x='Región',
@@ -567,7 +594,7 @@ if region_chart_data:
         color='Candidato',
         title="",
         barmode='group',
-        color_discrete_sequence=['#42a5f5', '#ff9800', '#00bcd4', '#ff5722', '#9c27b0', '#4caf50', '#f44336', '#ffc107']
+        color_discrete_sequence=color_sequence
     )
     fig_region.update_layout(
         height=500,

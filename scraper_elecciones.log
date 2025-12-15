@@ -1143,3 +1143,967 @@ Distribucion por region:
 2025-12-11 23:13:22,081 - INFO -   Ñuble: 21 comunas
 2025-12-11 23:13:22,082 - INFO - Tiempo total de ejecucion: 41.77 minutos
 2025-12-11 23:13:24,751 - INFO - Navegador cerrado
+2025-12-14 20:16:46,025 - INFO - Iniciando extraccion de datos electorales...
+2025-12-14 20:16:46,025 - INFO - Intentando inicializar Chrome...
+2025-12-14 20:16:46,026 - INFO - Chrome encontrado en: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-12-14 20:16:46,230 - INFO - ====== WebDriver manager ======
+2025-12-14 20:16:48,008 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-14 20:16:48,548 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-14 20:16:48,972 - INFO - There is no [win64] chromedriver "143.0.7499.42" for browser google-chrome "143.0.7499" in cache
+2025-12-14 20:16:48,972 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-14 20:16:50,090 - INFO - WebDriver version 143.0.7499.42 selected
+2025-12-14 20:16:50,095 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.42/win32/chromedriver-win32.zip
+2025-12-14 20:16:50,096 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.42/win32/chromedriver-win32.zip
+2025-12-14 20:16:50,512 - INFO - Driver downloading response is 200
+2025-12-14 20:16:53,038 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-14 20:16:54,514 - INFO - Driver has been saved in cache [C:\Users\emers\.wdm\drivers\chromedriver\win64\143.0.7499.42]
+2025-12-14 20:16:57,133 - INFO - Chrome inicializado con webdriver-manager
+2025-12-14 20:16:57,140 - INFO - Navegador Chrome inicializado correctamente
+2025-12-14 20:16:57,141 - INFO - Navegando a: https://segundavotacion.servel.cl/
+2025-12-14 20:17:19,293 - INFO - Filtro 'Division Electoral Chile' activado
+2025-12-14 20:17:19,858 - INFO - Se encontraron 16 regiones
+2025-12-14 20:17:19,858 - INFO - 
+============================================================
+2025-12-14 20:17:19,858 - INFO - PROCESANDO REGION: DE ARICA Y PARINACOTA -> Arica y Parinacota
+2025-12-14 20:17:19,858 - INFO - ============================================================
+2025-12-14 20:17:25,282 - INFO - Se encontraron 4 comunas en Arica y Parinacota
+2025-12-14 20:17:25,282 - INFO - Procesando: Arica - Arica y Parinacota
+2025-12-14 20:17:31,853 - INFO - Arica: 2 candidatos - Total: 1
+2025-12-14 20:17:31,853 - INFO - Procesando: Camarones - Arica y Parinacota
+2025-12-14 20:17:38,453 - INFO - Camarones: 2 candidatos - Total: 2
+2025-12-14 20:17:38,453 - INFO - Procesando: General Lagos - Arica y Parinacota
+2025-12-14 20:17:45,142 - INFO - General Lagos: 2 candidatos - Total: 3
+2025-12-14 20:17:45,143 - INFO - Procesando: Putre - Arica y Parinacota
+2025-12-14 20:17:51,750 - INFO - Putre: 2 candidatos - Total: 4
+2025-12-14 20:17:51,750 - INFO - 
+============================================================
+2025-12-14 20:17:51,750 - INFO - PROCESANDO REGION: DE TARAPACA -> Tarapacá
+2025-12-14 20:17:51,751 - INFO - ============================================================
+2025-12-14 20:17:57,335 - INFO - Se encontraron 7 comunas en Tarapacá
+2025-12-14 20:17:57,336 - INFO - Procesando: Alto Hospicio - Tarapacá
+2025-12-14 20:18:04,013 - INFO - Alto Hospicio: 2 candidatos - Total: 5
+2025-12-14 20:18:04,014 - INFO - Procesando: Camiña - Tarapacá
+2025-12-14 20:18:10,568 - INFO - Camiña: 2 candidatos - Total: 6
+2025-12-14 20:18:10,568 - INFO - Procesando: Colchane - Tarapacá
+2025-12-14 20:18:17,545 - INFO - Colchane: 2 candidatos - Total: 7
+2025-12-14 20:18:17,546 - INFO - Procesando: Huara - Tarapacá
+2025-12-14 20:18:24,087 - INFO - Huara: 2 candidatos - Total: 8
+2025-12-14 20:18:24,087 - INFO - Procesando: Iquique - Tarapacá
+2025-12-14 20:18:31,062 - INFO - Iquique: 2 candidatos - Total: 9
+2025-12-14 20:18:31,063 - INFO - Procesando: Pica - Tarapacá
+2025-12-14 20:18:37,511 - INFO - Pica: 2 candidatos - Total: 10
+2025-12-14 20:18:37,512 - INFO - Creando matriz completa de datos...
+2025-12-14 20:18:37,513 - INFO - Candidatos unicos: 2
+2025-12-14 20:18:37,513 - INFO - Totales unicos: 3
+2025-12-14 20:18:37,553 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_10_comunas_20251214_201837.csv
+2025-12-14 20:18:37,553 - INFO - Procesando: Pozo Almonte - Tarapacá
+2025-12-14 20:18:43,943 - INFO - Pozo Almonte: 2 candidatos - Total: 11
+2025-12-14 20:18:43,944 - INFO - 
+============================================================
+2025-12-14 20:18:43,944 - INFO - PROCESANDO REGION: DE ANTOFAGASTA -> Antofagasta
+2025-12-14 20:18:43,944 - INFO - ============================================================
+2025-12-14 20:18:49,266 - INFO - Se encontraron 9 comunas en Antofagasta
+2025-12-14 20:18:49,267 - INFO - Procesando: Antofagasta - Antofagasta
+2025-12-14 20:18:55,849 - INFO - Antofagasta: 2 candidatos - Total: 12
+2025-12-14 20:18:55,850 - INFO - Procesando: Calama - Antofagasta
+2025-12-14 20:19:02,358 - INFO - Calama: 2 candidatos - Total: 13
+2025-12-14 20:19:02,358 - INFO - Procesando: Maria Elena - Antofagasta
+2025-12-14 20:19:09,026 - INFO - Maria Elena: 2 candidatos - Total: 14
+2025-12-14 20:19:09,026 - INFO - Procesando: Mejillones - Antofagasta
+2025-12-14 20:19:15,933 - INFO - Mejillones: 2 candidatos - Total: 15
+2025-12-14 20:19:15,934 - INFO - Procesando: Ollague - Antofagasta
+2025-12-14 20:19:22,757 - INFO - Ollague: 2 candidatos - Total: 16
+2025-12-14 20:19:22,759 - INFO - Procesando: San Pedro de Atacama - Antofagasta
+2025-12-14 20:19:29,366 - INFO - San Pedro de Atacama: 2 candidatos - Total: 17
+2025-12-14 20:19:29,368 - INFO - Procesando: Sierra Gorda - Antofagasta
+2025-12-14 20:19:36,021 - INFO - Sierra Gorda: 2 candidatos - Total: 18
+2025-12-14 20:19:36,022 - INFO - Procesando: Taltal - Antofagasta
+2025-12-14 20:19:42,566 - INFO - Taltal: 2 candidatos - Total: 19
+2025-12-14 20:19:42,566 - INFO - Procesando: Tocopilla - Antofagasta
+2025-12-14 20:19:49,047 - INFO - Tocopilla: 2 candidatos - Total: 20
+2025-12-14 20:19:49,049 - INFO - Creando matriz completa de datos...
+2025-12-14 20:19:49,049 - INFO - Candidatos unicos: 2
+2025-12-14 20:19:49,049 - INFO - Totales unicos: 3
+2025-12-14 20:19:49,058 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_20_comunas_20251214_201949.csv
+2025-12-14 20:19:49,059 - INFO - 
+============================================================
+2025-12-14 20:19:49,059 - INFO - PROCESANDO REGION: DE ATACAMA -> Atacama
+2025-12-14 20:19:49,059 - INFO - ============================================================
+2025-12-14 20:19:54,764 - INFO - Se encontraron 9 comunas en Atacama
+2025-12-14 20:19:54,764 - INFO - Procesando: Alto del Carmen - Atacama
+2025-12-14 20:20:01,403 - INFO - Alto del Carmen: 2 candidatos - Total: 21
+2025-12-14 20:20:01,404 - INFO - Procesando: Caldera - Atacama
+2025-12-14 20:20:08,074 - INFO - Caldera: 2 candidatos - Total: 22
+2025-12-14 20:20:08,075 - INFO - Procesando: Chañaral - Atacama
+2025-12-14 20:20:14,593 - INFO - Chañaral: 2 candidatos - Total: 23
+2025-12-14 20:20:14,594 - INFO - Procesando: Copiapo - Atacama
+2025-12-14 20:20:21,007 - INFO - Copiapo: 2 candidatos - Total: 24
+2025-12-14 20:20:21,008 - INFO - Procesando: Diego de Almagro - Atacama
+2025-12-14 20:20:27,365 - INFO - Diego de Almagro: 2 candidatos - Total: 25
+2025-12-14 20:20:27,365 - INFO - Procesando: Freirina - Atacama
+2025-12-14 20:20:34,128 - INFO - Freirina: 2 candidatos - Total: 26
+2025-12-14 20:20:34,128 - INFO - Procesando: Huasco - Atacama
+2025-12-14 20:20:41,258 - INFO - Huasco: 2 candidatos - Total: 27
+2025-12-14 20:20:41,259 - INFO - Procesando: Tierra Amarilla - Atacama
+2025-12-14 20:20:48,096 - INFO - Tierra Amarilla: 2 candidatos - Total: 28
+2025-12-14 20:20:48,097 - INFO - Procesando: Vallenar - Atacama
+2025-12-14 20:20:54,856 - INFO - Vallenar: 2 candidatos - Total: 29
+2025-12-14 20:20:54,856 - INFO - 
+============================================================
+2025-12-14 20:20:54,857 - INFO - PROCESANDO REGION: DE COQUIMBO -> Coquimbo
+2025-12-14 20:20:54,857 - INFO - ============================================================
+2025-12-14 20:21:00,991 - INFO - Se encontraron 15 comunas en Coquimbo
+2025-12-14 20:21:00,992 - INFO - Procesando: Andacollo - Coquimbo
+2025-12-14 20:21:07,752 - INFO - Andacollo: 2 candidatos - Total: 30
+2025-12-14 20:21:07,754 - INFO - Creando matriz completa de datos...
+2025-12-14 20:21:07,755 - INFO - Candidatos unicos: 2
+2025-12-14 20:21:07,756 - INFO - Totales unicos: 3
+2025-12-14 20:21:07,765 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_30_comunas_20251214_202107.csv
+2025-12-14 20:21:07,765 - INFO - Procesando: Canela - Coquimbo
+2025-12-14 20:21:14,385 - INFO - Canela: 2 candidatos - Total: 31
+2025-12-14 20:21:14,386 - INFO - Procesando: Combarbala - Coquimbo
+2025-12-14 20:21:21,034 - INFO - Combarbala: 2 candidatos - Total: 32
+2025-12-14 20:21:21,035 - INFO - Procesando: Coquimbo - Coquimbo
+2025-12-14 20:21:27,784 - INFO - Coquimbo: 2 candidatos - Total: 33
+2025-12-14 20:21:27,785 - INFO - Procesando: Illapel - Coquimbo
+2025-12-14 20:21:34,461 - INFO - Illapel: 2 candidatos - Total: 34
+2025-12-14 20:21:34,462 - INFO - Procesando: la Higuera - Coquimbo
+2025-12-14 20:21:41,252 - INFO - la Higuera: 2 candidatos - Total: 35
+2025-12-14 20:21:41,253 - INFO - Procesando: la Serena - Coquimbo
+2025-12-14 20:21:47,963 - INFO - la Serena: 2 candidatos - Total: 36
+2025-12-14 20:21:47,963 - INFO - Procesando: los Vilos - Coquimbo
+2025-12-14 20:21:54,820 - INFO - los Vilos: 2 candidatos - Total: 37
+2025-12-14 20:21:54,821 - INFO - Procesando: Monte Patria - Coquimbo
+2025-12-14 20:22:01,462 - INFO - Monte Patria: 2 candidatos - Total: 38
+2025-12-14 20:22:01,462 - INFO - Procesando: Ovalle - Coquimbo
+2025-12-14 20:22:08,182 - INFO - Ovalle: 2 candidatos - Total: 39
+2025-12-14 20:22:08,183 - INFO - Procesando: Paihuano - Coquimbo
+2025-12-14 20:22:14,798 - INFO - Paihuano: 2 candidatos - Total: 40
+2025-12-14 20:22:14,799 - INFO - Creando matriz completa de datos...
+2025-12-14 20:22:14,800 - INFO - Candidatos unicos: 2
+2025-12-14 20:22:14,800 - INFO - Totales unicos: 3
+2025-12-14 20:22:14,809 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_40_comunas_20251214_202214.csv
+2025-12-14 20:22:14,810 - INFO - Procesando: Punitaqui - Coquimbo
+2025-12-14 20:22:21,678 - INFO - Punitaqui: 2 candidatos - Total: 41
+2025-12-14 20:22:21,678 - INFO - Procesando: Rio Hurtado - Coquimbo
+2025-12-14 20:22:28,350 - INFO - Rio Hurtado: 2 candidatos - Total: 42
+2025-12-14 20:22:28,350 - INFO - Procesando: Salamanca - Coquimbo
+2025-12-14 20:22:35,198 - INFO - Salamanca: 2 candidatos - Total: 43
+2025-12-14 20:22:35,199 - INFO - Procesando: Vicuña - Coquimbo
+2025-12-14 20:22:42,204 - INFO - Vicuña: 2 candidatos - Total: 44
+2025-12-14 20:22:42,205 - INFO - 
+============================================================
+2025-12-14 20:22:42,206 - INFO - PROCESANDO REGION: DE VALPARAISO -> Valparaíso
+2025-12-14 20:22:42,206 - INFO - ============================================================
+2025-12-14 20:22:50,264 - INFO - Se encontraron 38 comunas en Valparaíso
+2025-12-14 20:22:50,265 - INFO - Procesando: Algarrobo - Valparaíso
+2025-12-14 20:22:57,091 - INFO - Algarrobo: 2 candidatos - Total: 45
+2025-12-14 20:22:57,092 - INFO - Procesando: Cabildo - Valparaíso
+2025-12-14 20:23:03,872 - INFO - Cabildo: 2 candidatos - Total: 46
+2025-12-14 20:23:03,872 - INFO - Procesando: Calera - Valparaíso
+2025-12-14 20:23:10,508 - INFO - Calera: 2 candidatos - Total: 47
+2025-12-14 20:23:10,508 - INFO - Procesando: Calle Larga - Valparaíso
+2025-12-14 20:23:17,353 - INFO - Calle Larga: 2 candidatos - Total: 48
+2025-12-14 20:23:17,353 - INFO - Procesando: Cartagena - Valparaíso
+2025-12-14 20:23:24,049 - INFO - Cartagena: 2 candidatos - Total: 49
+2025-12-14 20:23:24,050 - INFO - Procesando: Casablanca - Valparaíso
+2025-12-14 20:23:30,861 - INFO - Casablanca: 2 candidatos - Total: 50
+2025-12-14 20:23:30,862 - INFO - Creando matriz completa de datos...
+2025-12-14 20:23:30,863 - INFO - Candidatos unicos: 2
+2025-12-14 20:23:30,863 - INFO - Totales unicos: 3
+2025-12-14 20:23:30,872 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_50_comunas_20251214_202330.csv
+2025-12-14 20:23:30,873 - INFO - Procesando: Catemu - Valparaíso
+2025-12-14 20:23:37,584 - INFO - Catemu: 2 candidatos - Total: 51
+2025-12-14 20:23:37,584 - INFO - Procesando: Concon - Valparaíso
+2025-12-14 20:23:44,453 - INFO - Concon: 2 candidatos - Total: 52
+2025-12-14 20:23:44,454 - INFO - Procesando: El Quisco - Valparaíso
+2025-12-14 20:23:51,117 - INFO - El Quisco: 2 candidatos - Total: 53
+2025-12-14 20:23:51,118 - INFO - Procesando: El Tabo - Valparaíso
+2025-12-14 20:23:57,960 - INFO - El Tabo: 2 candidatos - Total: 54
+2025-12-14 20:23:57,961 - INFO - Procesando: Hijuelas - Valparaíso
+2025-12-14 20:24:04,607 - INFO - Hijuelas: 2 candidatos - Total: 55
+2025-12-14 20:24:04,608 - INFO - Procesando: Isla de Pascua - Valparaíso
+2025-12-14 20:24:11,265 - INFO - Isla de Pascua: 2 candidatos - Total: 56
+2025-12-14 20:24:11,265 - INFO - Procesando: Juan Fernandez - Valparaíso
+2025-12-14 20:24:17,950 - INFO - Juan Fernandez: 2 candidatos - Total: 57
+2025-12-14 20:24:17,951 - INFO - Procesando: la Cruz - Valparaíso
+2025-12-14 20:24:24,862 - INFO - la Cruz: 2 candidatos - Total: 58
+2025-12-14 20:24:24,862 - INFO - Procesando: la Ligua - Valparaíso
+2025-12-14 20:24:31,494 - INFO - la Ligua: 2 candidatos - Total: 59
+2025-12-14 20:24:31,494 - INFO - Procesando: Limache - Valparaíso
+2025-12-14 20:24:38,484 - INFO - Limache: 2 candidatos - Total: 60
+2025-12-14 20:24:38,485 - INFO - Creando matriz completa de datos...
+2025-12-14 20:24:38,485 - INFO - Candidatos unicos: 2
+2025-12-14 20:24:38,486 - INFO - Totales unicos: 3
+2025-12-14 20:24:38,488 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_60_comunas_20251214_202438.csv
+2025-12-14 20:24:38,489 - INFO - Procesando: Llay-llay - Valparaíso
+2025-12-14 20:24:45,072 - INFO - Llay-llay: 2 candidatos - Total: 61
+2025-12-14 20:24:45,073 - INFO - Procesando: los Andes - Valparaíso
+2025-12-14 20:24:51,939 - INFO - los Andes: 2 candidatos - Total: 62
+2025-12-14 20:24:51,939 - INFO - Procesando: Nogales - Valparaíso
+2025-12-14 20:24:58,744 - INFO - Nogales: 2 candidatos - Total: 63
+2025-12-14 20:24:58,745 - INFO - Procesando: Olmue - Valparaíso
+2025-12-14 20:25:05,578 - INFO - Olmue: 2 candidatos - Total: 64
+2025-12-14 20:25:05,579 - INFO - Procesando: Panquehue - Valparaíso
+2025-12-14 20:25:12,265 - INFO - Panquehue: 2 candidatos - Total: 65
+2025-12-14 20:25:12,265 - INFO - Procesando: Papudo - Valparaíso
+2025-12-14 20:25:19,116 - INFO - Papudo: 2 candidatos - Total: 66
+2025-12-14 20:25:19,117 - INFO - Procesando: Petorca - Valparaíso
+2025-12-14 20:25:25,782 - INFO - Petorca: 2 candidatos - Total: 67
+2025-12-14 20:25:25,782 - INFO - Procesando: Puchuncavi - Valparaíso
+2025-12-14 20:25:32,675 - INFO - Puchuncavi: 2 candidatos - Total: 68
+2025-12-14 20:25:32,676 - INFO - Procesando: Putaendo - Valparaíso
+2025-12-14 20:25:39,355 - INFO - Putaendo: 2 candidatos - Total: 69
+2025-12-14 20:25:39,356 - INFO - Procesando: Quillota - Valparaíso
+2025-12-14 20:25:46,205 - INFO - Quillota: 2 candidatos - Total: 70
+2025-12-14 20:25:46,206 - INFO - Creando matriz completa de datos...
+2025-12-14 20:25:46,208 - INFO - Candidatos unicos: 2
+2025-12-14 20:25:46,208 - INFO - Totales unicos: 3
+2025-12-14 20:25:46,218 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_70_comunas_20251214_202546.csv
+2025-12-14 20:25:46,219 - INFO - Procesando: Quilpue - Valparaíso
+2025-12-14 20:25:52,885 - INFO - Quilpue: 2 candidatos - Total: 71
+2025-12-14 20:25:52,885 - INFO - Procesando: Quintero - Valparaíso
+2025-12-14 20:25:59,675 - INFO - Quintero: 2 candidatos - Total: 72
+2025-12-14 20:25:59,675 - INFO - Procesando: Rinconada - Valparaíso
+2025-12-14 20:26:06,396 - INFO - Rinconada: 2 candidatos - Total: 73
+2025-12-14 20:26:06,398 - INFO - Procesando: San Antonio - Valparaíso
+2025-12-14 20:26:13,236 - INFO - San Antonio: 2 candidatos - Total: 74
+2025-12-14 20:26:13,237 - INFO - Procesando: San Esteban - Valparaíso
+2025-12-14 20:26:19,866 - INFO - San Esteban: 2 candidatos - Total: 75
+2025-12-14 20:26:19,866 - INFO - Procesando: San Felipe - Valparaíso
+2025-12-14 20:26:26,596 - INFO - San Felipe: 2 candidatos - Total: 76
+2025-12-14 20:26:26,597 - INFO - Procesando: Santa Maria - Valparaíso
+2025-12-14 20:26:33,350 - INFO - Santa Maria: 2 candidatos - Total: 77
+2025-12-14 20:26:33,350 - INFO - Procesando: Santo Domingo - Valparaíso
+2025-12-14 20:26:40,819 - INFO - Santo Domingo: 2 candidatos - Total: 78
+2025-12-14 20:26:40,819 - INFO - Procesando: Valparaiso - Valparaíso
+2025-12-14 20:26:47,386 - INFO - Valparaiso: 2 candidatos - Total: 79
+2025-12-14 20:26:47,387 - INFO - Procesando: Villa Alemana - Valparaíso
+2025-12-14 20:26:54,165 - INFO - Villa Alemana: 2 candidatos - Total: 80
+2025-12-14 20:26:54,166 - INFO - Creando matriz completa de datos...
+2025-12-14 20:26:54,167 - INFO - Candidatos unicos: 2
+2025-12-14 20:26:54,167 - INFO - Totales unicos: 3
+2025-12-14 20:26:54,176 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_80_comunas_20251214_202654.csv
+2025-12-14 20:26:54,178 - INFO - Procesando: Viña del Mar - Valparaíso
+2025-12-14 20:27:00,818 - INFO - Viña del Mar: 2 candidatos - Total: 81
+2025-12-14 20:27:00,818 - INFO - Procesando: Zapallar - Valparaíso
+2025-12-14 20:27:07,526 - INFO - Zapallar: 2 candidatos - Total: 82
+2025-12-14 20:27:07,526 - INFO - 
+============================================================
+2025-12-14 20:27:07,526 - INFO - PROCESANDO REGION: METROPOLITANA DE SANTIAGO -> Metropolitana
+2025-12-14 20:27:07,526 - INFO - ============================================================
+2025-12-14 20:27:15,072 - INFO - Se encontraron 52 comunas en Metropolitana
+2025-12-14 20:27:15,072 - INFO - Procesando: Alhue - Metropolitana
+2025-12-14 20:27:21,780 - INFO - Alhue: 2 candidatos - Total: 83
+2025-12-14 20:27:21,781 - INFO - Procesando: Buin - Metropolitana
+2025-12-14 20:27:28,740 - INFO - Buin: 2 candidatos - Total: 84
+2025-12-14 20:27:28,740 - INFO - Procesando: Calera de Tango - Metropolitana
+2025-12-14 20:27:35,443 - INFO - Calera de Tango: 2 candidatos - Total: 85
+2025-12-14 20:27:35,443 - INFO - Procesando: Cerrillos - Metropolitana
+2025-12-14 20:27:42,281 - INFO - Cerrillos: 2 candidatos - Total: 86
+2025-12-14 20:27:42,282 - INFO - Procesando: Cerro Navia - Metropolitana
+2025-12-14 20:27:49,036 - INFO - Cerro Navia: 2 candidatos - Total: 87
+2025-12-14 20:27:49,038 - INFO - Procesando: Colina - Metropolitana
+2025-12-14 20:27:55,807 - INFO - Colina: 2 candidatos - Total: 88
+2025-12-14 20:27:55,807 - INFO - Procesando: Conchali - Metropolitana
+2025-12-14 20:28:02,678 - INFO - Conchali: 2 candidatos - Total: 89
+2025-12-14 20:28:02,679 - INFO - Procesando: Curacavi - Metropolitana
+2025-12-14 20:28:10,246 - INFO - Curacavi: 2 candidatos - Total: 90
+2025-12-14 20:28:10,247 - INFO - Creando matriz completa de datos...
+2025-12-14 20:28:10,247 - INFO - Candidatos unicos: 2
+2025-12-14 20:28:10,247 - INFO - Totales unicos: 3
+2025-12-14 20:28:10,252 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_90_comunas_20251214_202810.csv
+2025-12-14 20:28:10,253 - INFO - Procesando: El Bosque - Metropolitana
+2025-12-14 20:28:17,021 - INFO - El Bosque: 2 candidatos - Total: 91
+2025-12-14 20:28:17,021 - INFO - Procesando: El Monte - Metropolitana
+2025-12-14 20:28:23,728 - INFO - El Monte: 2 candidatos - Total: 92
+2025-12-14 20:28:23,729 - INFO - Procesando: Estacion Central - Metropolitana
+2025-12-14 20:28:30,526 - INFO - Estacion Central: 2 candidatos - Total: 93
+2025-12-14 20:28:30,526 - INFO - Procesando: Huechuraba - Metropolitana
+2025-12-14 20:28:37,357 - INFO - Huechuraba: 2 candidatos - Total: 94
+2025-12-14 20:28:37,358 - INFO - Procesando: Independencia - Metropolitana
+2025-12-14 20:28:44,187 - INFO - Independencia: 2 candidatos - Total: 95
+2025-12-14 20:28:44,188 - INFO - Procesando: Isla de Maipo - Metropolitana
+2025-12-14 20:28:50,925 - INFO - Isla de Maipo: 2 candidatos - Total: 96
+2025-12-14 20:28:50,926 - INFO - Procesando: la Cisterna - Metropolitana
+2025-12-14 20:28:57,696 - INFO - la Cisterna: 2 candidatos - Total: 97
+2025-12-14 20:28:57,698 - INFO - Procesando: la Florida - Metropolitana
+2025-12-14 20:29:04,589 - INFO - la Florida: 2 candidatos - Total: 98
+2025-12-14 20:29:04,590 - INFO - Procesando: la Granja - Metropolitana
+2025-12-14 20:29:11,379 - INFO - la Granja: 2 candidatos - Total: 99
+2025-12-14 20:29:11,380 - INFO - Procesando: la Pintana - Metropolitana
+2025-12-14 20:29:18,394 - INFO - la Pintana: 2 candidatos - Total: 100
+2025-12-14 20:29:18,395 - INFO - Creando matriz completa de datos...
+2025-12-14 20:29:18,396 - INFO - Candidatos unicos: 2
+2025-12-14 20:29:18,396 - INFO - Totales unicos: 3
+2025-12-14 20:29:18,406 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_100_comunas_20251214_202918.csv
+2025-12-14 20:29:18,406 - INFO - Procesando: la Reina - Metropolitana
+2025-12-14 20:29:25,453 - INFO - la Reina: 2 candidatos - Total: 101
+2025-12-14 20:29:25,453 - INFO - Procesando: Lampa - Metropolitana
+2025-12-14 20:29:32,303 - INFO - Lampa: 2 candidatos - Total: 102
+2025-12-14 20:29:32,303 - INFO - Procesando: las Condes - Metropolitana
+2025-12-14 20:29:39,162 - INFO - las Condes: 2 candidatos - Total: 103
+2025-12-14 20:29:39,162 - INFO - Procesando: Lo Barnechea - Metropolitana
+2025-12-14 20:29:46,028 - INFO - Lo Barnechea: 2 candidatos - Total: 104
+2025-12-14 20:29:46,028 - INFO - Procesando: Lo Espejo - Metropolitana
+2025-12-14 20:29:52,810 - INFO - Lo Espejo: 2 candidatos - Total: 105
+2025-12-14 20:29:52,810 - INFO - Procesando: Lo Prado - Metropolitana
+2025-12-14 20:29:59,826 - INFO - Lo Prado: 2 candidatos - Total: 106
+2025-12-14 20:29:59,826 - INFO - Procesando: Macul - Metropolitana
+2025-12-14 20:30:06,856 - INFO - Macul: 2 candidatos - Total: 107
+2025-12-14 20:30:06,859 - INFO - Procesando: Maipu - Metropolitana
+2025-12-14 20:30:14,009 - INFO - Maipu: 2 candidatos - Total: 108
+2025-12-14 20:30:14,010 - INFO - Procesando: Maria Pinto - Metropolitana
+2025-12-14 20:30:20,999 - INFO - Maria Pinto: 2 candidatos - Total: 109
+2025-12-14 20:30:21,000 - INFO - Procesando: Melipilla - Metropolitana
+2025-12-14 20:30:28,092 - INFO - Melipilla: 2 candidatos - Total: 110
+2025-12-14 20:30:28,093 - INFO - Creando matriz completa de datos...
+2025-12-14 20:30:28,094 - INFO - Candidatos unicos: 2
+2025-12-14 20:30:28,094 - INFO - Totales unicos: 3
+2025-12-14 20:30:28,108 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_110_comunas_20251214_203028.csv
+2025-12-14 20:30:28,109 - INFO - Procesando: ÑUñoa - Metropolitana
+2025-12-14 20:30:35,084 - INFO - ÑUñoa: 2 candidatos - Total: 111
+2025-12-14 20:30:35,085 - INFO - Procesando: Padre Hurtado - Metropolitana
+2025-12-14 20:30:42,214 - INFO - Padre Hurtado: 2 candidatos - Total: 112
+2025-12-14 20:30:42,215 - INFO - Procesando: Paine - Metropolitana
+2025-12-14 20:30:49,143 - INFO - Paine: 2 candidatos - Total: 113
+2025-12-14 20:30:49,144 - INFO - Procesando: Pedro Aguirre Cerda - Metropolitana
+2025-12-14 20:30:56,201 - INFO - Pedro Aguirre Cerda: 2 candidatos - Total: 114
+2025-12-14 20:30:56,201 - INFO - Procesando: Peñaflor - Metropolitana
+2025-12-14 20:31:02,875 - INFO - Peñaflor: 2 candidatos - Total: 115
+2025-12-14 20:31:02,876 - INFO - Procesando: Peñalolen - Metropolitana
+2025-12-14 20:31:09,578 - INFO - Peñalolen: 2 candidatos - Total: 116
+2025-12-14 20:31:09,578 - INFO - Procesando: Pirque - Metropolitana
+2025-12-14 20:31:16,336 - INFO - Pirque: 2 candidatos - Total: 117
+2025-12-14 20:31:16,336 - INFO - Procesando: Providencia - Metropolitana
+2025-12-14 20:31:23,091 - INFO - Providencia: 2 candidatos - Total: 118
+2025-12-14 20:31:23,091 - INFO - Procesando: Pudahuel - Metropolitana
+2025-12-14 20:31:29,697 - INFO - Pudahuel: 2 candidatos - Total: 119
+2025-12-14 20:31:29,697 - INFO - Procesando: Puente Alto - Metropolitana
+2025-12-14 20:31:36,452 - INFO - Puente Alto: 2 candidatos - Total: 120
+2025-12-14 20:31:36,453 - INFO - Creando matriz completa de datos...
+2025-12-14 20:31:36,453 - INFO - Candidatos unicos: 2
+2025-12-14 20:31:36,453 - INFO - Totales unicos: 3
+2025-12-14 20:31:36,461 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_120_comunas_20251214_203136.csv
+2025-12-14 20:31:36,461 - INFO - Procesando: Quilicura - Metropolitana
+2025-12-14 20:31:43,118 - INFO - Quilicura: 2 candidatos - Total: 121
+2025-12-14 20:31:43,118 - INFO - Procesando: Quinta Normal - Metropolitana
+2025-12-14 20:31:50,347 - INFO - Quinta Normal: 2 candidatos - Total: 122
+2025-12-14 20:31:50,348 - INFO - Procesando: Recoleta - Metropolitana
+2025-12-14 20:31:56,898 - INFO - Recoleta: 2 candidatos - Total: 123
+2025-12-14 20:31:56,898 - INFO - Procesando: Renca - Metropolitana
+2025-12-14 20:32:03,840 - INFO - Renca: 2 candidatos - Total: 124
+2025-12-14 20:32:03,840 - INFO - Procesando: San Bernardo - Metropolitana
+2025-12-14 20:32:10,868 - INFO - San Bernardo: 2 candidatos - Total: 125
+2025-12-14 20:32:10,868 - INFO - Procesando: San Joaquin - Metropolitana
+2025-12-14 20:32:17,908 - INFO - San Joaquin: 2 candidatos - Total: 126
+2025-12-14 20:32:17,908 - INFO - Procesando: San Jose de Maipo - Metropolitana
+2025-12-14 20:32:24,682 - INFO - San Jose de Maipo: 2 candidatos - Total: 127
+2025-12-14 20:32:24,682 - INFO - Procesando: San Miguel - Metropolitana
+2025-12-14 20:32:31,483 - INFO - San Miguel: 2 candidatos - Total: 128
+2025-12-14 20:32:31,483 - INFO - Procesando: San Pedro - Metropolitana
+2025-12-14 20:32:38,206 - INFO - San Pedro: 2 candidatos - Total: 129
+2025-12-14 20:32:38,206 - INFO - Procesando: San Ramon - Metropolitana
+2025-12-14 20:32:45,138 - INFO - San Ramon: 2 candidatos - Total: 130
+2025-12-14 20:32:45,140 - INFO - Creando matriz completa de datos...
+2025-12-14 20:32:45,141 - INFO - Candidatos unicos: 2
+2025-12-14 20:32:45,142 - INFO - Totales unicos: 3
+2025-12-14 20:32:45,156 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_130_comunas_20251214_203245.csv
+2025-12-14 20:32:45,157 - INFO - Procesando: Santiago - Metropolitana
+2025-12-14 20:32:51,835 - INFO - Santiago: 2 candidatos - Total: 131
+2025-12-14 20:32:51,836 - INFO - Procesando: Talagante - Metropolitana
+2025-12-14 20:32:58,552 - INFO - Talagante: 2 candidatos - Total: 132
+2025-12-14 20:32:58,553 - INFO - Procesando: Tiltil - Metropolitana
+2025-12-14 20:33:05,352 - INFO - Tiltil: 2 candidatos - Total: 133
+2025-12-14 20:33:05,353 - INFO - Procesando: Vitacura - Metropolitana
+2025-12-14 20:33:12,103 - INFO - Vitacura: 2 candidatos - Total: 134
+2025-12-14 20:33:12,103 - INFO - 
+============================================================
+2025-12-14 20:33:12,104 - INFO - PROCESANDO REGION: DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS -> Libertador
+2025-12-14 20:33:12,104 - INFO - ============================================================
+2025-12-14 20:33:18,931 - INFO - Se encontraron 33 comunas en Libertador
+2025-12-14 20:33:18,932 - INFO - Procesando: Chepica - Libertador
+2025-12-14 20:33:25,649 - INFO - Chepica: 2 candidatos - Total: 135
+2025-12-14 20:33:25,649 - INFO - Procesando: Chimbarongo - Libertador
+2025-12-14 20:33:32,429 - INFO - Chimbarongo: 2 candidatos - Total: 136
+2025-12-14 20:33:32,430 - INFO - Procesando: Codegua - Libertador
+2025-12-14 20:33:39,053 - INFO - Codegua: 2 candidatos - Total: 137
+2025-12-14 20:33:39,053 - INFO - Procesando: Coinco - Libertador
+2025-12-14 20:33:45,893 - INFO - Coinco: 2 candidatos - Total: 138
+2025-12-14 20:33:45,894 - INFO - Procesando: Coltauco - Libertador
+2025-12-14 20:33:52,505 - INFO - Coltauco: 2 candidatos - Total: 139
+2025-12-14 20:33:52,506 - INFO - Procesando: Doñihue - Libertador
+2025-12-14 20:33:59,352 - INFO - Doñihue: 2 candidatos - Total: 140
+2025-12-14 20:33:59,353 - INFO - Creando matriz completa de datos...
+2025-12-14 20:33:59,354 - INFO - Candidatos unicos: 2
+2025-12-14 20:33:59,354 - INFO - Totales unicos: 3
+2025-12-14 20:33:59,361 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_140_comunas_20251214_203359.csv
+2025-12-14 20:33:59,362 - INFO - Procesando: Graneros - Libertador
+2025-12-14 20:34:06,124 - INFO - Graneros: 2 candidatos - Total: 141
+2025-12-14 20:34:06,124 - INFO - Procesando: la Estrella - Libertador
+2025-12-14 20:34:12,798 - INFO - la Estrella: 2 candidatos - Total: 142
+2025-12-14 20:34:12,798 - INFO - Procesando: las Cabras - Libertador
+2025-12-14 20:34:19,479 - INFO - las Cabras: 2 candidatos - Total: 143
+2025-12-14 20:34:19,479 - INFO - Procesando: Litueche - Libertador
+2025-12-14 20:34:26,164 - INFO - Litueche: 2 candidatos - Total: 144
+2025-12-14 20:34:26,164 - INFO - Procesando: Lolol - Libertador
+2025-12-14 20:34:32,852 - INFO - Lolol: 2 candidatos - Total: 145
+2025-12-14 20:34:32,853 - INFO - Procesando: Machali - Libertador
+2025-12-14 20:34:39,706 - INFO - Machali: 2 candidatos - Total: 146
+2025-12-14 20:34:39,709 - INFO - Procesando: Malloa - Libertador
+2025-12-14 20:34:46,414 - INFO - Malloa: 2 candidatos - Total: 147
+2025-12-14 20:34:46,415 - INFO - Procesando: Marchigue - Libertador
+2025-12-14 20:34:53,014 - INFO - Marchigue: 2 candidatos - Total: 148
+2025-12-14 20:34:53,015 - INFO - Procesando: Mostazal - Libertador
+2025-12-14 20:34:59,725 - INFO - Mostazal: 2 candidatos - Total: 149
+2025-12-14 20:34:59,727 - INFO - Procesando: Nancagua - Libertador
+2025-12-14 20:35:06,545 - INFO - Nancagua: 2 candidatos - Total: 150
+2025-12-14 20:35:06,546 - INFO - Creando matriz completa de datos...
+2025-12-14 20:35:06,546 - INFO - Candidatos unicos: 2
+2025-12-14 20:35:06,548 - INFO - Totales unicos: 3
+2025-12-14 20:35:06,558 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_150_comunas_20251214_203506.csv
+2025-12-14 20:35:06,558 - INFO - Procesando: Navidad - Libertador
+2025-12-14 20:35:13,248 - INFO - Navidad: 2 candidatos - Total: 151
+2025-12-14 20:35:13,248 - INFO - Procesando: Olivar - Libertador
+2025-12-14 20:35:20,033 - INFO - Olivar: 2 candidatos - Total: 152
+2025-12-14 20:35:20,034 - INFO - Procesando: Palmilla - Libertador
+2025-12-14 20:35:26,714 - INFO - Palmilla: 2 candidatos - Total: 153
+2025-12-14 20:35:26,715 - INFO - Procesando: Paredones - Libertador
+2025-12-14 20:35:33,520 - INFO - Paredones: 2 candidatos - Total: 154
+2025-12-14 20:35:33,520 - INFO - Procesando: Peralillo - Libertador
+2025-12-14 20:35:40,203 - INFO - Peralillo: 2 candidatos - Total: 155
+2025-12-14 20:35:40,204 - INFO - Procesando: Peumo - Libertador
+2025-12-14 20:35:47,042 - INFO - Peumo: 2 candidatos - Total: 156
+2025-12-14 20:35:47,042 - INFO - Procesando: Pichidegua - Libertador
+2025-12-14 20:35:53,644 - INFO - Pichidegua: 2 candidatos - Total: 157
+2025-12-14 20:35:53,644 - INFO - Procesando: Pichilemu - Libertador
+2025-12-14 20:36:00,436 - INFO - Pichilemu: 2 candidatos - Total: 158
+2025-12-14 20:36:00,438 - INFO - Procesando: Placilla - Libertador
+2025-12-14 20:36:07,065 - INFO - Placilla: 2 candidatos - Total: 159
+2025-12-14 20:36:07,067 - INFO - Procesando: Pumanque - Libertador
+2025-12-14 20:36:13,690 - INFO - Pumanque: 2 candidatos - Total: 160
+2025-12-14 20:36:13,691 - INFO - Creando matriz completa de datos...
+2025-12-14 20:36:13,691 - INFO - Candidatos unicos: 2
+2025-12-14 20:36:13,691 - INFO - Totales unicos: 3
+2025-12-14 20:36:13,701 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_160_comunas_20251214_203613.csv
+2025-12-14 20:36:13,702 - INFO - Procesando: Quinta de Tilcoco - Libertador
+2025-12-14 20:36:20,322 - INFO - Quinta de Tilcoco: 2 candidatos - Total: 161
+2025-12-14 20:36:20,322 - INFO - Procesando: Rancagua - Libertador
+2025-12-14 20:36:27,068 - INFO - Rancagua: 2 candidatos - Total: 162
+2025-12-14 20:36:27,069 - INFO - Procesando: Rengo - Libertador
+2025-12-14 20:36:33,736 - INFO - Rengo: 2 candidatos - Total: 163
+2025-12-14 20:36:33,736 - INFO - Procesando: Requinoa - Libertador
+2025-12-14 20:36:40,449 - INFO - Requinoa: 2 candidatos - Total: 164
+2025-12-14 20:36:40,450 - INFO - Procesando: San Fernando - Libertador
+2025-12-14 20:36:47,117 - INFO - San Fernando: 2 candidatos - Total: 165
+2025-12-14 20:36:47,117 - INFO - Procesando: San Vicente - Libertador
+2025-12-14 20:36:54,036 - INFO - San Vicente: 2 candidatos - Total: 166
+2025-12-14 20:36:54,036 - INFO - Procesando: Santa Cruz - Libertador
+2025-12-14 20:37:00,857 - INFO - Santa Cruz: 2 candidatos - Total: 167
+2025-12-14 20:37:00,858 - INFO - 
+============================================================
+2025-12-14 20:37:00,859 - INFO - PROCESANDO REGION: DEL MAULE -> Maule
+2025-12-14 20:37:00,860 - INFO - ============================================================
+2025-12-14 20:37:07,895 - INFO - Se encontraron 30 comunas en Maule
+2025-12-14 20:37:07,896 - INFO - Procesando: Cauquenes - Maule
+2025-12-14 20:37:14,849 - INFO - Cauquenes: 2 candidatos - Total: 168
+2025-12-14 20:37:14,849 - INFO - Procesando: Chanco - Maule
+2025-12-14 20:37:21,715 - INFO - Chanco: 2 candidatos - Total: 169
+2025-12-14 20:37:21,716 - INFO - Procesando: Colbun - Maule
+2025-12-14 20:37:28,068 - INFO - Colbun: 2 candidatos - Total: 170
+2025-12-14 20:37:28,069 - INFO - Creando matriz completa de datos...
+2025-12-14 20:37:28,069 - INFO - Candidatos unicos: 2
+2025-12-14 20:37:28,070 - INFO - Totales unicos: 3
+2025-12-14 20:37:28,078 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_170_comunas_20251214_203728.csv
+2025-12-14 20:37:28,078 - INFO - Procesando: Constitucion - Maule
+2025-12-14 20:37:34,435 - INFO - Constitucion: 2 candidatos - Total: 171
+2025-12-14 20:37:34,435 - INFO - Procesando: Curepto - Maule
+2025-12-14 20:37:40,957 - INFO - Curepto: 2 candidatos - Total: 172
+2025-12-14 20:37:40,958 - INFO - Procesando: Curico - Maule
+2025-12-14 20:37:47,608 - INFO - Curico: 2 candidatos - Total: 173
+2025-12-14 20:37:47,608 - INFO - Procesando: Empedrado - Maule
+2025-12-14 20:37:54,096 - INFO - Empedrado: 2 candidatos - Total: 174
+2025-12-14 20:37:54,096 - INFO - Procesando: Hualañe - Maule
+2025-12-14 20:38:00,789 - INFO - Hualañe: 2 candidatos - Total: 175
+2025-12-14 20:38:00,790 - INFO - Procesando: Licanten - Maule
+2025-12-14 20:38:07,279 - INFO - Licanten: 2 candidatos - Total: 176
+2025-12-14 20:38:07,279 - INFO - Procesando: Linares - Maule
+2025-12-14 20:38:14,027 - INFO - Linares: 2 candidatos - Total: 177
+2025-12-14 20:38:14,028 - INFO - Procesando: Longavi - Maule
+2025-12-14 20:38:20,647 - INFO - Longavi: 2 candidatos - Total: 178
+2025-12-14 20:38:20,647 - INFO - Procesando: Maule - Maule
+2025-12-14 20:38:27,363 - INFO - Maule: 2 candidatos - Total: 179
+2025-12-14 20:38:27,363 - INFO - Procesando: Molina - Maule
+2025-12-14 20:38:33,950 - INFO - Molina: 2 candidatos - Total: 180
+2025-12-14 20:38:33,951 - INFO - Creando matriz completa de datos...
+2025-12-14 20:38:33,951 - INFO - Candidatos unicos: 2
+2025-12-14 20:38:33,952 - INFO - Totales unicos: 3
+2025-12-14 20:38:33,960 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_180_comunas_20251214_203833.csv
+2025-12-14 20:38:33,961 - INFO - Procesando: Parral - Maule
+2025-12-14 20:38:40,838 - INFO - Parral: 2 candidatos - Total: 181
+2025-12-14 20:38:40,839 - INFO - Procesando: Pelarco - Maule
+2025-12-14 20:38:47,394 - INFO - Pelarco: 2 candidatos - Total: 182
+2025-12-14 20:38:47,394 - INFO - Procesando: Pelluhue - Maule
+2025-12-14 20:38:53,930 - INFO - Pelluhue: 2 candidatos - Total: 183
+2025-12-14 20:38:53,930 - INFO - Procesando: Pencahue - Maule
+2025-12-14 20:39:00,616 - INFO - Pencahue: 2 candidatos - Total: 184
+2025-12-14 20:39:00,616 - INFO - Procesando: Rauco - Maule
+2025-12-14 20:39:07,153 - INFO - Rauco: 2 candidatos - Total: 185
+2025-12-14 20:39:07,153 - INFO - Procesando: Retiro - Maule
+2025-12-14 20:39:13,843 - INFO - Retiro: 2 candidatos - Total: 186
+2025-12-14 20:39:13,844 - INFO - Procesando: Rio Claro - Maule
+2025-12-14 20:39:20,326 - INFO - Rio Claro: 2 candidatos - Total: 187
+2025-12-14 20:39:20,326 - INFO - Procesando: Romeral - Maule
+2025-12-14 20:39:26,995 - INFO - Romeral: 2 candidatos - Total: 188
+2025-12-14 20:39:26,996 - INFO - Procesando: Sagrada Familia - Maule
+2025-12-14 20:39:33,510 - INFO - Sagrada Familia: 2 candidatos - Total: 189
+2025-12-14 20:39:33,510 - INFO - Procesando: San Clemente - Maule
+2025-12-14 20:39:40,137 - INFO - San Clemente: 2 candidatos - Total: 190
+2025-12-14 20:39:40,138 - INFO - Creando matriz completa de datos...
+2025-12-14 20:39:40,138 - INFO - Candidatos unicos: 2
+2025-12-14 20:39:40,138 - INFO - Totales unicos: 3
+2025-12-14 20:39:40,149 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_190_comunas_20251214_203940.csv
+2025-12-14 20:39:40,150 - INFO - Procesando: San Javier - Maule
+2025-12-14 20:39:46,677 - INFO - San Javier: 2 candidatos - Total: 191
+2025-12-14 20:39:46,678 - INFO - Procesando: San Rafael - Maule
+2025-12-14 20:39:53,347 - INFO - San Rafael: 2 candidatos - Total: 192
+2025-12-14 20:39:53,348 - INFO - Procesando: Talca - Maule
+2025-12-14 20:39:59,846 - INFO - Talca: 2 candidatos - Total: 193
+2025-12-14 20:39:59,846 - INFO - Procesando: Teno - Maule
+2025-12-14 20:40:06,462 - INFO - Teno: 2 candidatos - Total: 194
+2025-12-14 20:40:06,462 - INFO - Procesando: Vichuquen - Maule
+2025-12-14 20:40:13,050 - INFO - Vichuquen: 2 candidatos - Total: 195
+2025-12-14 20:40:13,052 - INFO - Procesando: Villa Alegre - Maule
+2025-12-14 20:40:19,802 - INFO - Villa Alegre: 2 candidatos - Total: 196
+2025-12-14 20:40:19,803 - INFO - Procesando: Yerbas Buenas - Maule
+2025-12-14 20:40:26,355 - INFO - Yerbas Buenas: 2 candidatos - Total: 197
+2025-12-14 20:40:26,356 - INFO - 
+============================================================
+2025-12-14 20:40:26,356 - INFO - PROCESANDO REGION: DE ÑUBLE -> Ñuble
+2025-12-14 20:40:26,357 - INFO - ============================================================
+2025-12-14 20:40:32,229 - INFO - Se encontraron 21 comunas en Ñuble
+2025-12-14 20:40:32,229 - INFO - Procesando: Bulnes - Ñuble
+2025-12-14 20:40:38,719 - INFO - Bulnes: 2 candidatos - Total: 198
+2025-12-14 20:40:38,719 - INFO - Procesando: Chillan - Ñuble
+2025-12-14 20:40:45,205 - INFO - Chillan: 2 candidatos - Total: 199
+2025-12-14 20:40:45,205 - INFO - Procesando: Chillan Viejo - Ñuble
+2025-12-14 20:40:51,957 - INFO - Chillan Viejo: 2 candidatos - Total: 200
+2025-12-14 20:40:51,958 - INFO - Creando matriz completa de datos...
+2025-12-14 20:40:51,958 - INFO - Candidatos unicos: 2
+2025-12-14 20:40:51,959 - INFO - Totales unicos: 3
+2025-12-14 20:40:51,964 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_200_comunas_20251214_204051.csv
+2025-12-14 20:40:51,965 - INFO - Procesando: Cobquecura - Ñuble
+2025-12-14 20:40:58,553 - INFO - Cobquecura: 2 candidatos - Total: 201
+2025-12-14 20:40:58,554 - INFO - Procesando: Coelemu - Ñuble
+2025-12-14 20:41:05,113 - INFO - Coelemu: 2 candidatos - Total: 202
+2025-12-14 20:41:05,113 - INFO - Procesando: Coihueco - Ñuble
+2025-12-14 20:41:11,784 - INFO - Coihueco: 2 candidatos - Total: 203
+2025-12-14 20:41:11,785 - INFO - Procesando: El Carmen - Ñuble
+2025-12-14 20:41:18,314 - INFO - El Carmen: 2 candidatos - Total: 204
+2025-12-14 20:41:18,314 - INFO - Procesando: Ninhue - Ñuble
+2025-12-14 20:41:25,121 - INFO - Ninhue: 2 candidatos - Total: 205
+2025-12-14 20:41:25,121 - INFO - Procesando: ÑIquen - Ñuble
+2025-12-14 20:41:31,762 - INFO - ÑIquen: 2 candidatos - Total: 206
+2025-12-14 20:41:31,762 - INFO - Procesando: Pemuco - Ñuble
+2025-12-14 20:41:38,260 - INFO - Pemuco: 2 candidatos - Total: 207
+2025-12-14 20:41:38,261 - INFO - Procesando: Pinto - Ñuble
+2025-12-14 20:41:44,848 - INFO - Pinto: 2 candidatos - Total: 208
+2025-12-14 20:41:44,849 - INFO - Procesando: Portezuelo - Ñuble
+2025-12-14 20:41:51,456 - INFO - Portezuelo: 2 candidatos - Total: 209
+2025-12-14 20:41:51,456 - INFO - Procesando: Quillon - Ñuble
+2025-12-14 20:41:58,218 - INFO - Quillon: 2 candidatos - Total: 210
+2025-12-14 20:41:58,219 - INFO - Creando matriz completa de datos...
+2025-12-14 20:41:58,221 - INFO - Candidatos unicos: 2
+2025-12-14 20:41:58,221 - INFO - Totales unicos: 3
+2025-12-14 20:41:58,230 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_210_comunas_20251214_204158.csv
+2025-12-14 20:41:58,232 - INFO - Procesando: Quirihue - Ñuble
+2025-12-14 20:42:04,888 - INFO - Quirihue: 2 candidatos - Total: 211
+2025-12-14 20:42:04,888 - INFO - Procesando: Ranquil - Ñuble
+2025-12-14 20:42:11,508 - INFO - Ranquil: 2 candidatos - Total: 212
+2025-12-14 20:42:11,509 - INFO - Procesando: San Carlos - Ñuble
+2025-12-14 20:42:18,142 - INFO - San Carlos: 2 candidatos - Total: 213
+2025-12-14 20:42:18,143 - INFO - Procesando: San Fabian - Ñuble
+2025-12-14 20:42:24,566 - INFO - San Fabian: 2 candidatos - Total: 214
+2025-12-14 20:42:24,566 - INFO - Procesando: San Ignacio - Ñuble
+2025-12-14 20:42:31,228 - INFO - San Ignacio: 2 candidatos - Total: 215
+2025-12-14 20:42:31,228 - INFO - Procesando: San Nicolas - Ñuble
+2025-12-14 20:42:37,793 - INFO - San Nicolas: 2 candidatos - Total: 216
+2025-12-14 20:42:37,793 - INFO - Procesando: Trehuaco - Ñuble
+2025-12-14 20:42:44,410 - INFO - Trehuaco: 2 candidatos - Total: 217
+2025-12-14 20:42:44,411 - INFO - Procesando: Yungay - Ñuble
+2025-12-14 20:42:50,967 - INFO - Yungay: 2 candidatos - Total: 218
+2025-12-14 20:42:50,968 - INFO - 
+============================================================
+2025-12-14 20:42:50,968 - INFO - PROCESANDO REGION: DEL BIOBIO -> Biobío
+2025-12-14 20:42:50,970 - INFO - ============================================================
+2025-12-14 20:42:57,314 - INFO - Se encontraron 33 comunas en Biobío
+2025-12-14 20:42:57,315 - INFO - Procesando: Alto Biobio - Biobío
+2025-12-14 20:43:03,835 - INFO - Alto Biobio: 2 candidatos - Total: 219
+2025-12-14 20:43:03,835 - INFO - Procesando: Antuco - Biobío
+2025-12-14 20:43:10,414 - INFO - Antuco: 2 candidatos - Total: 220
+2025-12-14 20:43:10,415 - INFO - Creando matriz completa de datos...
+2025-12-14 20:43:10,416 - INFO - Candidatos unicos: 2
+2025-12-14 20:43:10,416 - INFO - Totales unicos: 3
+2025-12-14 20:43:10,424 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_220_comunas_20251214_204310.csv
+2025-12-14 20:43:10,424 - INFO - Procesando: Arauco - Biobío
+2025-12-14 20:43:17,099 - INFO - Arauco: 2 candidatos - Total: 221
+2025-12-14 20:43:17,100 - INFO - Procesando: Cabrero - Biobío
+2025-12-14 20:43:23,626 - INFO - Cabrero: 2 candidatos - Total: 222
+2025-12-14 20:43:23,627 - INFO - Procesando: Cañete - Biobío
+2025-12-14 20:43:30,352 - INFO - Cañete: 2 candidatos - Total: 223
+2025-12-14 20:43:30,353 - INFO - Procesando: Chiguayante - Biobío
+2025-12-14 20:43:36,932 - INFO - Chiguayante: 2 candidatos - Total: 224
+2025-12-14 20:43:36,933 - INFO - Procesando: Concepcion - Biobío
+2025-12-14 20:43:43,615 - INFO - Concepcion: 2 candidatos - Total: 225
+2025-12-14 20:43:43,616 - INFO - Procesando: Contulmo - Biobío
+2025-12-14 20:43:50,185 - INFO - Contulmo: 2 candidatos - Total: 226
+2025-12-14 20:43:50,186 - INFO - Procesando: Coronel - Biobío
+2025-12-14 20:43:56,865 - INFO - Coronel: 2 candidatos - Total: 227
+2025-12-14 20:43:56,866 - INFO - Procesando: Curanilahue - Biobío
+2025-12-14 20:44:03,430 - INFO - Curanilahue: 2 candidatos - Total: 228
+2025-12-14 20:44:03,430 - INFO - Procesando: Florida - Biobío
+2025-12-14 20:44:10,185 - INFO - Florida: 2 candidatos - Total: 229
+2025-12-14 20:44:10,186 - INFO - Procesando: Hualpen - Biobío
+2025-12-14 20:44:16,875 - INFO - Hualpen: 2 candidatos - Total: 230
+2025-12-14 20:44:16,876 - INFO - Creando matriz completa de datos...
+2025-12-14 20:44:16,877 - INFO - Candidatos unicos: 2
+2025-12-14 20:44:16,877 - INFO - Totales unicos: 3
+2025-12-14 20:44:16,882 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_230_comunas_20251214_204416.csv
+2025-12-14 20:44:16,883 - INFO - Procesando: Hualqui - Biobío
+2025-12-14 20:44:23,679 - INFO - Hualqui: 2 candidatos - Total: 231
+2025-12-14 20:44:23,680 - INFO - Procesando: Laja - Biobío
+2025-12-14 20:44:30,323 - INFO - Laja: 2 candidatos - Total: 232
+2025-12-14 20:44:30,324 - INFO - Procesando: Lebu - Biobío
+2025-12-14 20:44:36,981 - INFO - Lebu: 2 candidatos - Total: 233
+2025-12-14 20:44:36,982 - INFO - Procesando: los Alamos - Biobío
+2025-12-14 20:44:43,581 - INFO - los Alamos: 2 candidatos - Total: 234
+2025-12-14 20:44:43,581 - INFO - Procesando: los Angeles - Biobío
+2025-12-14 20:44:50,247 - INFO - los Angeles: 2 candidatos - Total: 235
+2025-12-14 20:44:50,249 - INFO - Procesando: Lota - Biobío
+2025-12-14 20:44:56,780 - INFO - Lota: 2 candidatos - Total: 236
+2025-12-14 20:44:56,781 - INFO - Procesando: Mulchen - Biobío
+2025-12-14 20:45:03,346 - INFO - Mulchen: 2 candidatos - Total: 237
+2025-12-14 20:45:03,346 - INFO - Procesando: Nacimiento - Biobío
+2025-12-14 20:45:09,775 - INFO - Nacimiento: 2 candidatos - Total: 238
+2025-12-14 20:45:09,776 - INFO - Procesando: Negrete - Biobío
+2025-12-14 20:45:16,429 - INFO - Negrete: 2 candidatos - Total: 239
+2025-12-14 20:45:16,429 - INFO - Procesando: Penco - Biobío
+2025-12-14 20:45:22,990 - INFO - Penco: 2 candidatos - Total: 240
+2025-12-14 20:45:22,991 - INFO - Creando matriz completa de datos...
+2025-12-14 20:45:22,992 - INFO - Candidatos unicos: 2
+2025-12-14 20:45:22,992 - INFO - Totales unicos: 3
+2025-12-14 20:45:23,000 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_240_comunas_20251214_204522.csv
+2025-12-14 20:45:23,000 - INFO - Procesando: Quilaco - Biobío
+2025-12-14 20:45:29,650 - INFO - Quilaco: 2 candidatos - Total: 241
+2025-12-14 20:45:29,650 - INFO - Procesando: Quilleco - Biobío
+2025-12-14 20:45:36,250 - INFO - Quilleco: 2 candidatos - Total: 242
+2025-12-14 20:45:36,250 - INFO - Procesando: San Pedro de la Paz - Biobío
+2025-12-14 20:45:42,878 - INFO - San Pedro de la Paz: 2 candidatos - Total: 243
+2025-12-14 20:45:42,878 - INFO - Procesando: San Rosendo - Biobío
+2025-12-14 20:45:49,409 - INFO - San Rosendo: 2 candidatos - Total: 244
+2025-12-14 20:45:49,410 - INFO - Procesando: Santa Barbara - Biobío
+2025-12-14 20:45:56,059 - INFO - Santa Barbara: 2 candidatos - Total: 245
+2025-12-14 20:45:56,059 - INFO - Procesando: Santa Juana - Biobío
+2025-12-14 20:46:02,581 - INFO - Santa Juana: 2 candidatos - Total: 246
+2025-12-14 20:46:02,582 - INFO - Procesando: Talcahuano - Biobío
+2025-12-14 20:46:09,278 - INFO - Talcahuano: 2 candidatos - Total: 247
+2025-12-14 20:46:09,279 - INFO - Procesando: Tirua - Biobío
+2025-12-14 20:46:15,845 - INFO - Tirua: 2 candidatos - Total: 248
+2025-12-14 20:46:15,845 - INFO - Procesando: Tome - Biobío
+2025-12-14 20:46:22,474 - INFO - Tome: 2 candidatos - Total: 249
+2025-12-14 20:46:22,474 - INFO - Procesando: Tucapel - Biobío
+2025-12-14 20:46:29,025 - INFO - Tucapel: 2 candidatos - Total: 250
+2025-12-14 20:46:29,026 - INFO - Creando matriz completa de datos...
+2025-12-14 20:46:29,026 - INFO - Candidatos unicos: 2
+2025-12-14 20:46:29,026 - INFO - Totales unicos: 3
+2025-12-14 20:46:29,032 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_250_comunas_20251214_204629.csv
+2025-12-14 20:46:29,033 - INFO - Procesando: Yumbel - Biobío
+2025-12-14 20:46:35,647 - INFO - Yumbel: 2 candidatos - Total: 251
+2025-12-14 20:46:35,648 - INFO - 
+============================================================
+2025-12-14 20:46:35,648 - INFO - PROCESANDO REGION: DE LA ARAUCANIA -> La Araucanía
+2025-12-14 20:46:35,648 - INFO - ============================================================
+2025-12-14 20:46:42,019 - INFO - Se encontraron 32 comunas en La Araucanía
+2025-12-14 20:46:42,019 - INFO - Procesando: Angol - La Araucanía
+2025-12-14 20:46:48,648 - INFO - Angol: 2 candidatos - Total: 252
+2025-12-14 20:46:48,649 - INFO - Procesando: Carahue - La Araucanía
+2025-12-14 20:46:55,206 - INFO - Carahue: 2 candidatos - Total: 253
+2025-12-14 20:46:55,206 - INFO - Procesando: Cholchol - La Araucanía
+2025-12-14 20:47:01,757 - INFO - Cholchol: 2 candidatos - Total: 254
+2025-12-14 20:47:01,758 - INFO - Procesando: Collipulli - La Araucanía
+2025-12-14 20:47:08,383 - INFO - Collipulli: 2 candidatos - Total: 255
+2025-12-14 20:47:08,383 - INFO - Procesando: Cunco - La Araucanía
+2025-12-14 20:47:14,899 - INFO - Cunco: 2 candidatos - Total: 256
+2025-12-14 20:47:14,900 - INFO - Procesando: Curacautin - La Araucanía
+2025-12-14 20:47:21,534 - INFO - Curacautin: 2 candidatos - Total: 257
+2025-12-14 20:47:21,535 - INFO - Procesando: Curarrehue - La Araucanía
+2025-12-14 20:47:28,069 - INFO - Curarrehue: 2 candidatos - Total: 258
+2025-12-14 20:47:28,070 - INFO - Procesando: Ercilla - La Araucanía
+2025-12-14 20:47:34,656 - INFO - Ercilla: 2 candidatos - Total: 259
+2025-12-14 20:47:34,656 - INFO - Procesando: Freire - La Araucanía
+2025-12-14 20:47:41,152 - INFO - Freire: 2 candidatos - Total: 260
+2025-12-14 20:47:41,153 - INFO - Creando matriz completa de datos...
+2025-12-14 20:47:41,153 - INFO - Candidatos unicos: 2
+2025-12-14 20:47:41,154 - INFO - Totales unicos: 3
+2025-12-14 20:47:41,160 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_260_comunas_20251214_204741.csv
+2025-12-14 20:47:41,160 - INFO - Procesando: Galvarino - La Araucanía
+2025-12-14 20:47:47,749 - INFO - Galvarino: 2 candidatos - Total: 261
+2025-12-14 20:47:47,749 - INFO - Procesando: Gorbea - La Araucanía
+2025-12-14 20:47:54,180 - INFO - Gorbea: 2 candidatos - Total: 262
+2025-12-14 20:47:54,180 - INFO - Procesando: Lautaro - La Araucanía
+2025-12-14 20:48:00,785 - INFO - Lautaro: 2 candidatos - Total: 263
+2025-12-14 20:48:00,786 - INFO - Procesando: Loncoche - La Araucanía
+2025-12-14 20:48:07,374 - INFO - Loncoche: 2 candidatos - Total: 264
+2025-12-14 20:48:07,374 - INFO - Procesando: Lonquimay - La Araucanía
+2025-12-14 20:48:14,055 - INFO - Lonquimay: 2 candidatos - Total: 265
+2025-12-14 20:48:14,056 - INFO - Procesando: los Sauces - La Araucanía
+2025-12-14 20:48:20,740 - INFO - los Sauces: 2 candidatos - Total: 266
+2025-12-14 20:48:20,741 - INFO - Procesando: Lumaco - La Araucanía
+2025-12-14 20:48:27,496 - INFO - Lumaco: 2 candidatos - Total: 267
+2025-12-14 20:48:27,497 - INFO - Procesando: Melipeuco - La Araucanía
+2025-12-14 20:48:34,279 - INFO - Melipeuco: 2 candidatos - Total: 268
+2025-12-14 20:48:34,280 - INFO - Procesando: Nueva Imperial - La Araucanía
+2025-12-14 20:48:41,091 - INFO - Nueva Imperial: 2 candidatos - Total: 269
+2025-12-14 20:48:41,092 - INFO - Procesando: Padre las Casas - La Araucanía
+2025-12-14 20:48:47,925 - INFO - Padre las Casas: 2 candidatos - Total: 270
+2025-12-14 20:48:47,927 - INFO - Creando matriz completa de datos...
+2025-12-14 20:48:47,929 - INFO - Candidatos unicos: 2
+2025-12-14 20:48:47,930 - INFO - Totales unicos: 3
+2025-12-14 20:48:47,947 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_270_comunas_20251214_204847.csv
+2025-12-14 20:48:47,948 - INFO - Procesando: Perquenco - La Araucanía
+2025-12-14 20:48:55,021 - INFO - Perquenco: 2 candidatos - Total: 271
+2025-12-14 20:48:55,021 - INFO - Procesando: Pitrufquen - La Araucanía
+2025-12-14 20:49:01,809 - INFO - Pitrufquen: 2 candidatos - Total: 272
+2025-12-14 20:49:01,810 - INFO - Procesando: Pucon - La Araucanía
+2025-12-14 20:49:08,640 - INFO - Pucon: 2 candidatos - Total: 273
+2025-12-14 20:49:08,641 - INFO - Procesando: Puren - La Araucanía
+2025-12-14 20:49:15,425 - INFO - Puren: 2 candidatos - Total: 274
+2025-12-14 20:49:15,425 - INFO - Procesando: Renaico - La Araucanía
+2025-12-14 20:49:22,343 - INFO - Renaico: 2 candidatos - Total: 275
+2025-12-14 20:49:22,344 - INFO - Procesando: Saavedra - La Araucanía
+2025-12-14 20:49:29,131 - INFO - Saavedra: 2 candidatos - Total: 276
+2025-12-14 20:49:29,132 - INFO - Procesando: Temuco - La Araucanía
+2025-12-14 20:49:35,939 - INFO - Temuco: 2 candidatos - Total: 277
+2025-12-14 20:49:35,940 - INFO - Procesando: Teodoro Schmidt - La Araucanía
+2025-12-14 20:49:42,451 - INFO - Teodoro Schmidt: 2 candidatos - Total: 278
+2025-12-14 20:49:42,451 - INFO - Procesando: Tolten - La Araucanía
+2025-12-14 20:49:49,059 - INFO - Tolten: 2 candidatos - Total: 279
+2025-12-14 20:49:49,060 - INFO - Procesando: Traiguen - La Araucanía
+2025-12-14 20:49:55,654 - INFO - Traiguen: 2 candidatos - Total: 280
+2025-12-14 20:49:55,655 - INFO - Creando matriz completa de datos...
+2025-12-14 20:49:55,656 - INFO - Candidatos unicos: 2
+2025-12-14 20:49:55,656 - INFO - Totales unicos: 3
+2025-12-14 20:49:55,669 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_280_comunas_20251214_204955.csv
+2025-12-14 20:49:55,671 - INFO - Procesando: Victoria - La Araucanía
+2025-12-14 20:50:02,320 - INFO - Victoria: 2 candidatos - Total: 281
+2025-12-14 20:50:02,320 - INFO - Procesando: Vilcun - La Araucanía
+2025-12-14 20:50:08,921 - INFO - Vilcun: 2 candidatos - Total: 282
+2025-12-14 20:50:08,922 - INFO - Procesando: Villarrica - La Araucanía
+2025-12-14 20:50:15,564 - INFO - Villarrica: 2 candidatos - Total: 283
+2025-12-14 20:50:15,564 - INFO - 
+============================================================
+2025-12-14 20:50:15,565 - INFO - PROCESANDO REGION: DE LOS RIOS -> Los Ríos
+2025-12-14 20:50:15,565 - INFO - ============================================================
+2025-12-14 20:50:21,258 - INFO - Se encontraron 12 comunas en Los Ríos
+2025-12-14 20:50:21,259 - INFO - Procesando: Corral - Los Ríos
+2025-12-14 20:50:27,843 - INFO - Corral: 2 candidatos - Total: 284
+2025-12-14 20:50:27,843 - INFO - Procesando: Futrono - Los Ríos
+2025-12-14 20:50:34,381 - INFO - Futrono: 2 candidatos - Total: 285
+2025-12-14 20:50:34,381 - INFO - Procesando: la Union - Los Ríos
+2025-12-14 20:50:40,977 - INFO - la Union: 2 candidatos - Total: 286
+2025-12-14 20:50:40,977 - INFO - Procesando: Lago Ranco - Los Ríos
+2025-12-14 20:50:47,506 - INFO - Lago Ranco: 2 candidatos - Total: 287
+2025-12-14 20:50:47,508 - INFO - Procesando: Lanco - Los Ríos
+2025-12-14 20:50:54,146 - INFO - Lanco: 2 candidatos - Total: 288
+2025-12-14 20:50:54,148 - INFO - Procesando: los Lagos - Los Ríos
+2025-12-14 20:51:00,614 - INFO - los Lagos: 2 candidatos - Total: 289
+2025-12-14 20:51:00,614 - INFO - Procesando: Mafil - Los Ríos
+2025-12-14 20:51:07,073 - INFO - Mafil: 2 candidatos - Total: 290
+2025-12-14 20:51:07,074 - INFO - Creando matriz completa de datos...
+2025-12-14 20:51:07,074 - INFO - Candidatos unicos: 2
+2025-12-14 20:51:07,074 - INFO - Totales unicos: 3
+2025-12-14 20:51:07,083 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_290_comunas_20251214_205107.csv
+2025-12-14 20:51:07,083 - INFO - Procesando: Mariquina - Los Ríos
+2025-12-14 20:51:13,449 - INFO - Mariquina: 2 candidatos - Total: 291
+2025-12-14 20:51:13,451 - INFO - Procesando: Paillaco - Los Ríos
+2025-12-14 20:51:20,284 - INFO - Paillaco: 2 candidatos - Total: 292
+2025-12-14 20:51:20,286 - INFO - Procesando: Panguipulli - Los Ríos
+2025-12-14 20:51:27,368 - INFO - Panguipulli: 2 candidatos - Total: 293
+2025-12-14 20:51:27,369 - INFO - Procesando: Rio Bueno - Los Ríos
+2025-12-14 20:51:34,766 - INFO - Rio Bueno: 2 candidatos - Total: 294
+2025-12-14 20:51:34,766 - INFO - Procesando: Valdivia - Los Ríos
+2025-12-14 20:51:41,505 - INFO - Valdivia: 2 candidatos - Total: 295
+2025-12-14 20:51:41,505 - INFO - 
+============================================================
+2025-12-14 20:51:41,505 - INFO - PROCESANDO REGION: DE LOS LAGOS -> Los Lagos
+2025-12-14 20:51:41,505 - INFO - ============================================================
+2025-12-14 20:51:48,029 - INFO - Se encontraron 30 comunas en Los Lagos
+2025-12-14 20:51:48,030 - INFO - Procesando: Ancud - Los Lagos
+2025-12-14 20:51:54,567 - INFO - Ancud: 2 candidatos - Total: 296
+2025-12-14 20:51:54,567 - INFO - Procesando: Calbuco - Los Lagos
+2025-12-14 20:52:01,249 - INFO - Calbuco: 2 candidatos - Total: 297
+2025-12-14 20:52:01,250 - INFO - Procesando: Castro - Los Lagos
+2025-12-14 20:52:07,879 - INFO - Castro: 2 candidatos - Total: 298
+2025-12-14 20:52:07,879 - INFO - Procesando: Chaiten - Los Lagos
+2025-12-14 20:52:14,659 - INFO - Chaiten: 2 candidatos - Total: 299
+2025-12-14 20:52:14,660 - INFO - Procesando: Chonchi - Los Lagos
+2025-12-14 20:52:21,263 - INFO - Chonchi: 2 candidatos - Total: 300
+2025-12-14 20:52:21,265 - INFO - Creando matriz completa de datos...
+2025-12-14 20:52:21,265 - INFO - Candidatos unicos: 2
+2025-12-14 20:52:21,265 - INFO - Totales unicos: 3
+2025-12-14 20:52:21,275 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_300_comunas_20251214_205221.csv
+2025-12-14 20:52:21,275 - INFO - Procesando: Cochamo - Los Lagos
+2025-12-14 20:52:28,074 - INFO - Cochamo: 2 candidatos - Total: 301
+2025-12-14 20:52:28,074 - INFO - Procesando: Curaco de Velez - Los Lagos
+2025-12-14 20:52:34,677 - INFO - Curaco de Velez: 2 candidatos - Total: 302
+2025-12-14 20:52:34,678 - INFO - Procesando: Dalcahue - Los Lagos
+2025-12-14 20:52:41,442 - INFO - Dalcahue: 2 candidatos - Total: 303
+2025-12-14 20:52:41,443 - INFO - Procesando: Fresia - Los Lagos
+2025-12-14 20:52:48,068 - INFO - Fresia: 2 candidatos - Total: 304
+2025-12-14 20:52:48,069 - INFO - Procesando: Frutillar - Los Lagos
+2025-12-14 20:52:54,661 - INFO - Frutillar: 2 candidatos - Total: 305
+2025-12-14 20:52:54,661 - INFO - Procesando: Futaleufu - Los Lagos
+2025-12-14 20:53:01,278 - INFO - Futaleufu: 2 candidatos - Total: 306
+2025-12-14 20:53:01,278 - INFO - Procesando: Hualaihue - Los Lagos
+2025-12-14 20:53:08,147 - INFO - Hualaihue: 2 candidatos - Total: 307
+2025-12-14 20:53:08,147 - INFO - Procesando: Llanquihue - Los Lagos
+2025-12-14 20:53:14,804 - INFO - Llanquihue: 2 candidatos - Total: 308
+2025-12-14 20:53:14,805 - INFO - Procesando: los Muermos - Los Lagos
+2025-12-14 20:53:21,466 - INFO - los Muermos: 2 candidatos - Total: 309
+2025-12-14 20:53:21,466 - INFO - Procesando: Maullin - Los Lagos
+2025-12-14 20:53:28,328 - INFO - Maullin: 2 candidatos - Total: 310
+2025-12-14 20:53:28,329 - INFO - Creando matriz completa de datos...
+2025-12-14 20:53:28,330 - INFO - Candidatos unicos: 2
+2025-12-14 20:53:28,330 - INFO - Totales unicos: 3
+2025-12-14 20:53:28,336 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_310_comunas_20251214_205328.csv
+2025-12-14 20:53:28,336 - INFO - Procesando: Osorno - Los Lagos
+2025-12-14 20:53:35,057 - INFO - Osorno: 2 candidatos - Total: 311
+2025-12-14 20:53:35,057 - INFO - Procesando: Palena - Los Lagos
+2025-12-14 20:53:41,766 - INFO - Palena: 2 candidatos - Total: 312
+2025-12-14 20:53:41,766 - INFO - Procesando: Puerto Montt - Los Lagos
+2025-12-14 20:53:48,527 - INFO - Puerto Montt: 2 candidatos - Total: 313
+2025-12-14 20:53:48,527 - INFO - Procesando: Puerto Octay - Los Lagos
+2025-12-14 20:53:55,335 - INFO - Puerto Octay: 2 candidatos - Total: 314
+2025-12-14 20:53:55,336 - INFO - Procesando: Puerto Varas - Los Lagos
+2025-12-14 20:54:02,071 - INFO - Puerto Varas: 2 candidatos - Total: 315
+2025-12-14 20:54:02,073 - INFO - Procesando: Puqueldon - Los Lagos
+2025-12-14 20:54:08,894 - INFO - Puqueldon: 2 candidatos - Total: 316
+2025-12-14 20:54:08,895 - INFO - Procesando: Purranque - Los Lagos
+2025-12-14 20:54:15,829 - INFO - Purranque: 2 candidatos - Total: 317
+2025-12-14 20:54:15,830 - INFO - Procesando: Puyehue - Los Lagos
+2025-12-14 20:54:22,321 - INFO - Puyehue: 2 candidatos - Total: 318
+2025-12-14 20:54:22,321 - INFO - Procesando: Queilen - Los Lagos
+2025-12-14 20:54:29,114 - INFO - Queilen: 2 candidatos - Total: 319
+2025-12-14 20:54:29,115 - INFO - Procesando: Quellon - Los Lagos
+2025-12-14 20:54:35,767 - INFO - Quellon: 2 candidatos - Total: 320
+2025-12-14 20:54:35,767 - INFO - Creando matriz completa de datos...
+2025-12-14 20:54:35,768 - INFO - Candidatos unicos: 2
+2025-12-14 20:54:35,768 - INFO - Totales unicos: 3
+2025-12-14 20:54:35,785 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_320_comunas_20251214_205435.csv
+2025-12-14 20:54:35,786 - INFO - Procesando: Quemchi - Los Lagos
+2025-12-14 20:54:42,702 - INFO - Quemchi: 2 candidatos - Total: 321
+2025-12-14 20:54:42,703 - INFO - Procesando: Quinchao - Los Lagos
+2025-12-14 20:54:49,402 - INFO - Quinchao: 2 candidatos - Total: 322
+2025-12-14 20:54:49,402 - INFO - Procesando: Rio Negro - Los Lagos
+2025-12-14 20:54:56,113 - INFO - Rio Negro: 2 candidatos - Total: 323
+2025-12-14 20:54:56,114 - INFO - Procesando: San Juan de la Costa - Los Lagos
+2025-12-14 20:55:02,786 - INFO - San Juan de la Costa: 2 candidatos - Total: 324
+2025-12-14 20:55:02,787 - INFO - Procesando: San Pablo - Los Lagos
+2025-12-14 20:55:09,402 - INFO - San Pablo: 2 candidatos - Total: 325
+2025-12-14 20:55:09,403 - INFO - 
+============================================================
+2025-12-14 20:55:09,403 - INFO - PROCESANDO REGION: DE AYSEN DEL GENERAL CARLOS IBAÑEZ DEL CAMPO -> Aysén
+2025-12-14 20:55:09,403 - INFO - ============================================================
+2025-12-14 20:55:15,111 - INFO - Se encontraron 10 comunas en Aysén
+2025-12-14 20:55:15,111 - INFO - Procesando: Aysen - Aysén
+2025-12-14 20:55:21,724 - INFO - Aysen: 2 candidatos - Total: 326
+2025-12-14 20:55:21,725 - INFO - Procesando: Chile Chico - Aysén
+2025-12-14 20:55:28,295 - INFO - Chile Chico: 2 candidatos - Total: 327
+2025-12-14 20:55:28,296 - INFO - Procesando: Cisnes - Aysén
+2025-12-14 20:55:35,082 - INFO - Cisnes: 2 candidatos - Total: 328
+2025-12-14 20:55:35,082 - INFO - Procesando: Cochrane - Aysén
+2025-12-14 20:55:41,735 - INFO - Cochrane: 2 candidatos - Total: 329
+2025-12-14 20:55:41,736 - INFO - Procesando: Coyhaique - Aysén
+2025-12-14 20:55:48,342 - INFO - Coyhaique: 2 candidatos - Total: 330
+2025-12-14 20:55:48,343 - INFO - Creando matriz completa de datos...
+2025-12-14 20:55:48,344 - INFO - Candidatos unicos: 2
+2025-12-14 20:55:48,344 - INFO - Totales unicos: 3
+2025-12-14 20:55:48,354 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_330_comunas_20251214_205548.csv
+2025-12-14 20:55:48,355 - INFO - Procesando: Guaitecas - Aysén
+2025-12-14 20:55:54,835 - INFO - Guaitecas: 2 candidatos - Total: 331
+2025-12-14 20:55:54,835 - INFO - Procesando: Lago Verde - Aysén
+2025-12-14 20:56:01,369 - INFO - Lago Verde: 2 candidatos - Total: 332
+2025-12-14 20:56:01,370 - INFO - Procesando: O'higgins - Aysén
+2025-12-14 20:56:07,948 - INFO - O'higgins: 2 candidatos - Total: 333
+2025-12-14 20:56:07,948 - INFO - Procesando: Rio Ibañez - Aysén
+2025-12-14 20:56:14,656 - INFO - Rio Ibañez: 2 candidatos - Total: 334
+2025-12-14 20:56:14,656 - INFO - Procesando: Tortel - Aysén
+2025-12-14 20:56:21,235 - INFO - Tortel: 2 candidatos - Total: 335
+2025-12-14 20:56:21,235 - INFO - 
+============================================================
+2025-12-14 20:56:21,236 - INFO - PROCESANDO REGION: DE MAGALLANES Y DE LA ANTARTICA CHILENA -> Magallanes
+2025-12-14 20:56:21,236 - INFO - ============================================================
+2025-12-14 20:56:26,835 - INFO - Se encontraron 11 comunas en Magallanes
+2025-12-14 20:56:26,836 - INFO - Procesando: Antartica - Magallanes
+2025-12-14 20:56:33,756 - INFO - Antartica: 2 candidatos - Total: 336
+2025-12-14 20:56:33,756 - INFO - Procesando: Cabo de Hornos(ex-navarino) - Magallanes
+2025-12-14 20:56:40,582 - INFO - Cabo de Hornos(ex-navarino): 2 candidatos - Total: 337
+2025-12-14 20:56:40,582 - INFO - Procesando: Laguna Blanca - Magallanes
+2025-12-14 20:56:47,318 - INFO - Laguna Blanca: 2 candidatos - Total: 338
+2025-12-14 20:56:47,319 - INFO - Procesando: Natales - Magallanes
+2025-12-14 20:56:54,205 - INFO - Natales: 2 candidatos - Total: 339
+2025-12-14 20:56:54,206 - INFO - Procesando: Porvenir - Magallanes
+2025-12-14 20:57:00,857 - INFO - Porvenir: 2 candidatos - Total: 340
+2025-12-14 20:57:00,858 - INFO - Creando matriz completa de datos...
+2025-12-14 20:57:00,858 - INFO - Candidatos unicos: 2
+2025-12-14 20:57:00,858 - INFO - Totales unicos: 3
+2025-12-14 20:57:00,863 - INFO - Progreso guardado: progreso_parcial\progreso_parcial_340_comunas_20251214_205700.csv
+2025-12-14 20:57:00,863 - INFO - Procesando: Primavera - Magallanes
+2025-12-14 20:57:07,643 - INFO - Primavera: 2 candidatos - Total: 341
+2025-12-14 20:57:07,644 - INFO - Procesando: Punta Arenas - Magallanes
+2025-12-14 20:57:14,366 - INFO - Punta Arenas: 2 candidatos - Total: 342
+2025-12-14 20:57:14,367 - INFO - Procesando: Rio Verde - Magallanes
+2025-12-14 20:57:20,958 - INFO - Rio Verde: 2 candidatos - Total: 343
+2025-12-14 20:57:20,958 - INFO - Procesando: San Gregorio - Magallanes
+2025-12-14 20:57:27,716 - INFO - San Gregorio: 2 candidatos - Total: 344
+2025-12-14 20:57:27,716 - INFO - Procesando: Timaukel - Magallanes
+2025-12-14 20:57:34,336 - INFO - Timaukel: 2 candidatos - Total: 345
+2025-12-14 20:57:34,336 - INFO - Procesando: Torres del Paine - Magallanes
+2025-12-14 20:57:40,919 - INFO - Torres del Paine: 2 candidatos - Total: 346
+2025-12-14 20:57:40,920 - INFO - Creando matriz completa de datos...
+2025-12-14 20:57:40,922 - INFO - Candidatos unicos: 2
+2025-12-14 20:57:40,923 - INFO - Totales unicos: 3
+2025-12-14 20:57:40,937 - INFO - CSV guardado: matriz_segunda_vuelta_presidencial_2025_346_comunas_20251214_205740.csv
+2025-12-14 20:57:42,028 - INFO - Excel guardado: matriz_segunda_vuelta_presidencial_2025_346_comunas_20251214_205740.xlsx
+2025-12-14 20:57:42,034 - INFO - Metadatos guardados: matriz_segunda_vuelta_presidencial_2025_346_comunas_20251214_205740_METADATOS.txt
+2025-12-14 20:57:42,035 - INFO - 
+================================================================================
+2025-12-14 20:57:42,036 - INFO - EXTRACCION COMPLETADA
+2025-12-14 20:57:42,038 - INFO - ================================================================================
+2025-12-14 20:57:42,039 - INFO - Comunas procesadas exitosamente: 346
+2025-12-14 20:57:42,040 - INFO - Comunas con error: 0
+2025-12-14 20:57:42,041 - INFO - Total de comunas en el dataset: 346
+2025-12-14 20:57:42,043 - INFO - Regiones procesadas: 16
+2025-12-14 20:57:42,044 - INFO - Candidatos en el dataset: 2
+2025-12-14 20:57:42,045 - INFO - Metricas de totales: 3
+2025-12-14 20:57:42,045 - INFO - Columnas totales: 12
+2025-12-14 20:57:42,046 - INFO - 
+Distribucion por region:
+2025-12-14 20:57:42,072 - INFO -   Antofagasta: 9 comunas
+2025-12-14 20:57:42,073 - INFO -   Arica y Parinacota: 4 comunas
+2025-12-14 20:57:42,074 - INFO -   Atacama: 9 comunas
+2025-12-14 20:57:42,075 - INFO -   Aysén: 10 comunas
+2025-12-14 20:57:42,075 - INFO -   Biobío: 33 comunas
+2025-12-14 20:57:42,076 - INFO -   Coquimbo: 15 comunas
+2025-12-14 20:57:42,077 - INFO -   La Araucanía: 32 comunas
+2025-12-14 20:57:42,080 - INFO -   Libertador: 33 comunas
+2025-12-14 20:57:42,084 - INFO -   Los Lagos: 30 comunas
+2025-12-14 20:57:42,086 - INFO -   Los Ríos: 12 comunas
+2025-12-14 20:57:42,086 - INFO -   Magallanes: 11 comunas
+2025-12-14 20:57:42,089 - INFO -   Maule: 30 comunas
+2025-12-14 20:57:42,098 - INFO -   Metropolitana: 52 comunas
+2025-12-14 20:57:42,103 - INFO -   Tarapacá: 7 comunas
+2025-12-14 20:57:42,105 - INFO -   Valparaíso: 38 comunas
+2025-12-14 20:57:42,108 - INFO -   Ñuble: 21 comunas
+2025-12-14 20:57:42,111 - INFO - Tiempo total de ejecucion: 40.93 minutos
+2025-12-14 20:57:44,671 - INFO - Navegador cerrado
